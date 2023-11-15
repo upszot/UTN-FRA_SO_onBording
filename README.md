@@ -42,7 +42,11 @@ Nosotros en la cursada vamos a hacer referencia a 2 de las distros mas usadas.
 - [ ] Creacion de Usuarios,Grupos y manejo de permisos
 - [ ] LVM
 - [ ] Bash Scripting
+- [ ] Manejo de Servicios
+- [ ] Protocolo ssh
 - [ ] Aprovisionamiento y configuracion mediante Ansible
 - [ ] Docker
+- [ ] Herramienta de redes
+- [ ] Protocolo HTTP
 - [ ] Kubernetes (Deseable)
 
