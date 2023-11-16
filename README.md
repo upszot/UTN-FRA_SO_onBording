@@ -6,13 +6,16 @@
 
 ### Programas que se requieren instalar.
 
+- [ ] Chocolatey
 - [ ] WSL
-- [ ] Chocolay
+- [ ] git
 - [ ] VirtualBox
 - [ ] Vagrant
 - [ ] MobaXterm
 - [ ] Putty
-- [ ] git
+- [ ] WinSCP
+- [ ] Docker Desktop
+- [ ] Visual Studio Code / SublimeText
 
 ### Algunos Repositorios que usaremos durante la cursada
 
@@ -34,19 +37,114 @@ Nosotros en la cursada vamos a hacer referencia a 2 de las distros mas usadas.
 - Tambien levantaremos VM mediante Vagrant.
 
 ### Algunos Temas que aprenderemos durante la cursada.
-- [ ] Jerarquia de Estructura de Directorio Linux
-- [ ] Conexion entre equipos mediante protocolo SSH
-- [ ] Comandos Basicos - Aprender a moverse por la terminal
-- [ ] Algunos Comandos Avanzados
-- [ ] Obtener y filtrar informacion.
-- [ ] Creacion de Usuarios,Grupos y manejo de permisos
-- [ ] LVM
-- [ ] Bash Scripting
-- [ ] Manejo de Servicios
-- [ ] Protocolo ssh
-- [ ] Aprovisionamiento y configuracion mediante Ansible
-- [ ] Docker
-- [ ] Herramienta de redes
-- [ ] Protocolo HTTP
-- [ ] Kubernetes (Deseable)
+
+- [ ] **Preparación del entorno del estudiante:**
+   - Instalación vía Chocolatey / PowerShell de:
+     - VirtualBox
+     - Vagrant
+     - MobaXterm
+     - PuTTY
+     - PuTTY Key Generator
+     - WinSCP
+     - WSL
+   > Configura el entorno del estudiante con las herramientas necesarias para el curso.
+
+- [ ] **Generación de VM dentro de VirtualBox:**
+   - Creación e instalación de Linux de forma tradicional.
+   - Uso de una imagen de disco descargada de OsBoxes.org.
+   - Generación de VM mediante Vagrant.
+   > Crea y gestiona máquinas virtuales para propósitos de aprendizaje.
+
+- [ ] **Conexión a las VM:**
+   - Terminal de VirtualBox.
+   - SSH dentro de PowerShell.
+   - `vagrant ssh`.
+   - Conexión por SSH vía PuTTY o MobaXterm.
+   - WinSCP.
+   > Conecta y gestiona el acceso a las máquinas virtuales desde diferentes entornos.
+
+- [ ] **Jerarquía de Estructura de Directorio Linux:**
+   > Explora la estructura de directorios en sistemas Linux.
+
+- [ ] **Comandos Básicos - Aprender a moverse por la terminal:**
+   - `man`, `apropos`, `whoami`, `pwd`, `cd`, `mkdir`, `rm`, `touch`, `cp`, `mv`.
+   > Adquiere habilidades básicas para navegar y manipular archivos en la terminal.
+
+- [ ] **Obtención y Filtrado de Información:**
+   - `cat`, `grep`, `tail`, `head`.
+   > Aprende a extraer y filtrar información de archivos y flujos de datos.
+
+- [ ] **Uso básico de VIM:**
+   > Introducción al editor de texto VIM para la edición de archivos en la terminal.
+
+- [ ] **Redireccionamiento y Tuberías:**
+   - `<<`, `>`, `>>`.
+   - `stdout`, `stdin`, `stderr`.
+   > Comprende y utiliza redireccionamientos y tuberías en la terminal.
+
+- [ ] **Algunos Comandos Avanzados:**
+   - `awk`, `xargs`, `visudo`.
+   > Explora comandos avanzados para el procesamiento de texto y la administración del sistema.
+
+- [ ] **Creación de Usuarios y Grupos:**
+   - `useradd`, `groupadd`, `usermod`, `id`.
+   - Archivos de configuración relacionados:
+     - `/etc/passwd`: Contiene información de cuentas de usuario.
+     - `/etc/shadow`: Almacena contraseñas cifradas.
+     - `/etc/group`: Información de grupos de usuarios.
+   > Gestiona usuarios y grupos en el sistema y explora los archivos de configuración asociados para entender su funcionamiento.
+
+
+- [ ] **Permisos:**
+   - `chmod`.
+   > Asigna permisos a archivos y directorios.
+
+- [ ] **Particionamiento, Formateo y Montado:**
+   - `dmesg`, `fdisk`, `mkfs.ext4`, `df`, `lsblk`.
+   - `/etc/fstab`, `mount`, `umount`.
+   > Trabaja con particiones, formateo y montado de sistemas de archivos.
+
+- [ ] **LVM (Logical Volume Management):**
+   - `pvcreate`, `vgcreate`, `lvcreate`, `vgextend`, `lvextend`.
+   - `resize2fs`, `lvremove`, `vgremove`, `pcremove`.
+   > Gestiona volúmenes lógicos para una administración de almacenamiento más flexible.
+
+- [ ] **Memoria Swap:**
+   - `free`, `mkswap`, `swapon`, `swapoff`.
+   > Configura y gestiona la memoria swap del sistema.
+
+- [ ] **Procesos:**
+   - `ps`, `top`.
+   - Procesos en segundo nivel.
+   > Monitorea y gestiona procesos en el sistema.
+
+- [ ] **Bash Scripting:**
+   - `if`, `for`, `while`.
+   - Variables.
+   > Automatiza tareas mediante scripts Bash.
+
+- [ ] **Manejo de Servicios con Systemctl:**
+   > Controla y gestiona servicios del sistema.
+
+- [ ] **Protocolo SSH:**
+   - `ssh-keygen`, `ssh-copyid`.
+   > Configura y utiliza el protocolo SSH de forma segura.
+
+- [ ] **Aprovisionamiento y Configuración mediante Ansible:**
+   > Automatiza la configuración y aprovisionamiento de sistemas.
+
+- [ ] **Docker:**
+   > Introducción a la virtualización de contenedores con Docker.
+
+- [ ] **Herramienta de Redes:**
+   - `curl`, `wget`, `nmap`, `nc`, `telnet`.
+   - `ip`, `ifconfig`.
+   > Explora herramientas de red para diagnóstico y configuración.
+
+- [ ] **Protocolo HTTP:**
+   - `curl -X GET / POST..`
+   > Trabaja con el protocolo HTTP para realizar solicitudes y enviar datos.
+
+- [ ] **Kubernetes (Deseable):**
+   > Conceptos básicos de Kubernetes, si el tiempo y el interés lo permiten.
 
