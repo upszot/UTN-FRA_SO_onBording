@@ -1,8 +1,6 @@
 # UTN-FRA_SO_onBording
 ### Catedra de Arquitectura de Sistemas Operativos - UTN
 
- - Informacion sobre Programas necesarios para realizar la cursada de la materia de Arquitectura de Sistemas Operativos.
- - 
 
 ### Programas que se requieren instalar.
 
@@ -28,12 +26,14 @@
 - [Docker](https://github.com/upszot/SO_Docker.git)
 
 
-### Distribuciones de linux utilizadas.
-En principio el alumno podra utilizar cualquier distribucion de linux que desee.
-Nosotros en la cursada vamos a hacer referencia a 2 de las distros mas usadas.
+### Distribuciones de GNU/Linux utilizadas.
+> En principio el alumno podra utilizar cualquier distribucion de GNU/Linux que desee. </br>
+> Nosotros en la cursada vamos a hacer referencia a 2 de las distros mas usadas. </br>
+ > Tambien podra elegir el [Entorno de Escritorio](https://es.wikipedia.org/wiki/Entornos_de_Escritorio_en_Linux) que desee ([KDE](https://es.wikipedia.org/wiki/KDE), [GNOME](https://es.wikipedia.org/wiki/GNOME), [Cinnamon](https://es.wikipedia.org/wiki/Cinnamon), [MATE](https://es.wikipedia.org/wiki/MATE) , [Xfce](https://es.wikipedia.org/wiki/Xfce), [Deepin](https://es.wikipedia.org/wiki/Deepin) 
 
-- [Ubuntu](https://ubuntu.com/download/desktop) Recomendamos instalar ultima version de Larga Duracion de Soporte (LTS)
-- [Fedora](https://fedoraproject.org/es/spins/) Recomendamos Instalar Fedora Mate-Compiz
+- Nosotros Recomendamos (Por simplicidad y bajos requerimentos de recursos las siguientes)
+  - [Ubuntu](https://ubuntu.com/download/desktop) Recomendamos instalar ultima version de Larga Duracion de Soporte (LTS)
+  - [Fedora](https://fedoraproject.org/es/spins/) Recomendamos Instalar Fedora Mate-Compiz
 - Tambien levantaremos VM mediante Vagrant.
 
 ### Algunos Temas que aprenderemos durante la cursada.
