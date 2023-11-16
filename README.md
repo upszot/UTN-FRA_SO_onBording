@@ -41,13 +41,20 @@
 - [ ] **Preparación del entorno del estudiante: </br>
     (Es deseable que este todo instalado antes de iniciar la cursada)**
    - Instalación vía Chocolatey / PowerShell de:
-     - VirtualBox
-     - Vagrant
-     - MobaXterm
-     - PuTTY
-     - PuTTY Key Generator
-     - WinSCP
-     - WSL
+     - [WSL](https://learn.microsoft.com/es-es/windows/wsl/install)
+     - [Chocolatey](https://docs.chocolatey.org/en-us/choco/setup#more-install-options)
+       - git
+       - sublimetext4
+       - VirtualBox
+       - virtualbox-guest-additions-guest
+       - Vagrant
+       - MobaXterm
+       - PuTTY
+       - PuTTYgen
+       - WinSCP
+```sh
+choco install -y git sublimetext4 virtualbox virtualbox-guest-additions-guest.install vagrant mobaxterm putty.portable winscp   --log-file=c:\chocolatey_install.log
+```
    > Configura el entorno del estudiante con las herramientas necesarias para el curso.
 
 - [ ] **Generación de VM dentro de VirtualBox:**
