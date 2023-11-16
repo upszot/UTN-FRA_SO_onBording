@@ -104,6 +104,32 @@ Nosotros en la cursada vamos a hacer referencia a 2 de las distros mas usadas.
    - `awk`, `xargs`, `visudo`.
    > Explora comandos avanzados para el procesamiento de texto y la administración del sistema.
 
+- [ ] **Manejo de Paquetes y Búsqueda de Archivos:**
+   - Debian y Derivados (apt):
+     - `apt update`: Actualizar la lista de paquetes disponibles.
+     - `apt search`: Buscar paquetes.
+     - `apt install`: Instalar paquetes.
+     - `apt upgrade`: Actualizar paquetes instalados a las versiones más recientes.
+     - `apt show`: Mostrar información detallada de un paquete, incluyendo proveedores.
+     - Agregar Repositorios en Debian y Derivados.
+       > Configura y añade repositorios adicionales para acceder a más paquetes.
+
+   - RedHat y Derivados (dnf):
+     - `dnf search`: Buscar paquetes.
+     - `dnf update`: Actualizar paquetes instalados.
+     - `dnf providers`: Mostrar proveedores de un paquete.
+     - Agregar Repositorios en RedHat y Derivados.
+       > Configura y añade repositorios adicionales para acceder a más paquetes.
+   
+   - Búsqueda y Localización de Archivos:
+     - `locate`: Buscar archivos o directorios en la base de datos del sistema.
+     - `updatedb`: Actualizar la base de datos de `locate`.
+     - `whereis`: Mostrar ubicaciones de archivos binarios, fuentes y páginas de manuales.
+     - `whatis`: Mostrar descripción breve de un comando.
+       
+   > Aprende a gestionar paquetes, actualizar listas, buscar, instalar y configurar repositorios, así como a buscar archivos en sistemas Debian y RedHat.
+
+
 - [ ] **Creación de Usuarios y Grupos:**
    - `useradd`, `groupadd`, `usermod`, `id`.
    - Archivos de configuración relacionados:
