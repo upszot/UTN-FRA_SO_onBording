@@ -19,13 +19,13 @@
 
 ### Algunos Repositorios que usaremos durante la cursada
 
+- 
+- [Vagrant](https://github.com/upszot/UTN-FRA_SO_Vagrant.git)
+- [Examenes](https://github.com/upszot/UTN-FRA_SO_Examenes.git)
+- [Bash](https://github.com/upszot/UTN-FRA_SO_Bash.git)
 - [Ansible](https://github.com/upszot/SO_Ansible.git)
 - [pc-workstation](https://github.com/upszot/pc-workstation.git)
-- [Vagrant](https://github.com/upszot/UTN-FRA_SO_Vagrant.git)
-- [Bash](https://github.com/upszot/UTN-FRA_SO_Bash.git)
 - [Docker](https://github.com/upszot/SO_Docker.git)
-- [Examenes](https://github.com/upszot/UTN-FRA_SO_Examenes.git)
-- 
 
 
 ### Distribuciones de linux utilizadas.
