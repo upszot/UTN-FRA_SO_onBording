@@ -67,8 +67,26 @@ Nosotros en la cursada vamos a hacer referencia a 2 de las distros mas usadas.
    > Explora la estructura de directorios en sistemas Linux.
 
 - [ ] **Comandos Básicos - Aprender a moverse por la terminal:**
-   - `man`, `apropos`, `whoami`, `pwd`, `cd`, `mkdir`, `rm`, `touch`, `cp`, `mv`.
-   > Adquiere habilidades básicas para navegar y manipular archivos en la terminal.
+   - Navegación:
+     - `cd`: Cambiar directorio.
+     - `pwd`: Mostrar ruta del directorio actual.
+   - Manipulación de Archivos y Directorios:
+     - `mkdir`: Crear directorios.
+     - `rm`: Eliminar archivos o directorios.
+     - `touch`: Crear archivos vacíos o actualizar marcas de tiempo.
+     - `cp`: Copiar archivos o directorios.
+     - `mv`: Mover o renombrar archivos o directorios.
+   - Información del Usuario:
+     - `whoami`: Mostrar nombre de usuario.
+     - `id`: Mostrar información de usuario y grupo.
+   - Información del Sistema y Sesiones:
+     - `w`: Mostrar información sobre los usuarios y sus actividades.
+     - `last`: Mostrar historial de inicio de sesión.
+   - Documentación y Ayuda:
+     - `man`: Mostrar el manual del comando.
+     - `apropos`: Buscar comandos por palabra clave.
+   > Desarrolla habilidades fundamentales para la navegación y manipulación de archivos en la terminal, y aprende a acceder a información detallada con `man` y `apropos`.
+
 
 - [ ] **Obtención y Filtrado de Información:**
    - `cat`, `grep`, `tail`, `head`.
