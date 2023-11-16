@@ -76,8 +76,10 @@ choco install -y git sublimetext4 virtualbox virtualbox-guest-additions-guest.in
 
 - [ ] **Comandos Básicos - Aprender a moverse por la terminal:**
    - Navegación:
-     - `cd`: Cambiar directorio.
      - `pwd`: Mostrar ruta del directorio actual.
+     - `ls`: Listar contenido del directorio.
+     - `cd`: Cambiar directorio.
+     - `tree`: Mostrar estructura de directorios en forma de árbol.
    - Manipulación de Archivos y Directorios:
      - `mkdir`: Crear directorios.
      - `rm`: Eliminar archivos o directorios.
