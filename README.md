@@ -97,6 +97,25 @@ choco install -y git sublimetext4 virtualbox virtualbox-guest-additions-guest.in
      - `apropos`: Buscar comandos por palabra clave.
    > Desarrolla habilidades fundamentales para la navegación y manipulación de archivos en la terminal, y aprende a acceder a información detallada con `man` y `apropos`.
 
+- [ ] **Atajos para Moverse Dentro de la Terminal:**
+   - `Ctrl + E`: Moverse al final de la línea.
+   - `Ctrl + A`: Moverse al principio de la línea.
+   - `Ctrl + →` y `Ctrl + ←`: Saltar de palabra en palabra hacia adelante y hacia atrás, respectivamente.
+   - `Ctrl + W`: Eliminar la palabra anterior.
+   - `Ctrl + U`: Eliminar desde la posición actual hasta el principio de la línea.
+   - `Ctrl + K`: Eliminar desde la posición actual hasta el final de la línea.
+   - `Ctrl + T`: Intercambiar las dos letras antes del cursor.
+   - `Alt + T`: Intercambiar las dos palabras antes del cursor.
+   - `Ctrl + Y`: Pegar texto previamente eliminado.
+   > Agiliza tus movimientos dentro de la terminal utilizando estos atajos para navegar y editar comandos con eficiencia.
+
+- [ ] **Atajos para Búsqueda en el Historial:**
+   - `history`: Mostrar el historial completo de comandos.
+   - `Ctrl + R`: Realizar una búsqueda inversa en el historial de comandos.
+   - `!número`: Ejecutar el comando con el número específico en el historial.
+   - `!!`: Ejecutar el último comando.
+   - `sudo !!`: Ejecutar el último comando con privilegios de superusuario.
+   > Facilita la búsqueda de comandos anteriores en la historia de la terminal y agiliza la ejecución con estos atajos específicos.
 
 - [ ] **Obtención y Filtrado de Información:**
    - `cat`, `grep`, `tail`, `head`.
@@ -109,6 +128,22 @@ choco install -y git sublimetext4 virtualbox virtualbox-guest-additions-guest.in
    - `<<`, `>`, `>>`.
    - `stdout`, `stdin`, `stderr`.
    > Comprende y utiliza redireccionamientos y tuberías en la terminal.
+
+- [ ] **Tuneando tu Terminal:**
+   - [ ] **Tunenado el History:**
+      - `echo "HISTSIZE=-1" >> ~/.bashrc`: Configurar el historial para guardar comandos indefinidamente.
+      - `echo "export HISTCONTROL=\$HISTCONTROL:ignoreboth" >> ~/.bashrc`: Configurar el historial para ignorar comandos duplicados y espacios en blanco consecutivos.
+      - `echo "history -a" >> ~/.bashrc`: Automatizar la sincronización del historial al ejecutar un comando.
+
+      > Mejora la gestión y persistencia del historial para un trabajo más eficiente.
+
+   - [ ] **Agregando Alias:**
+      - `mkdir -p ~/aliases.d && echo "export PATH=\$PATH:~/aliases.d" >> ~/.bashrc`: Crear la carpeta `aliases.d` y agregarla al `PATH`.
+      - `echo "alias saludo='cowsay Hola \$(whoami)'" >> ~/aliases.d/saludo`: Crear un alias "saludo" que muestra un saludo personalizado usando COWSAY.
+      - `echo "alias history-top='history | awk '{CMD[\$2]++;count++;}END { for (a in CMD)print CMD[a] " " CMD[a]/count*100 "% " a;}' | grep -v "./" | column -c3 -s " " -t | sort -nr | nl | head -n10'" >> ~/aliases.d/history-top`: Crear un alias "history-top" que muestra los 10 comandos más utilizados.
+
+      > Organiza tus alias en una carpeta dedicada y mejora la legibilidad y mantenimiento de tu entorno.
+
 
 - [ ] **Algunos Comandos Avanzados:**
    - `awk`, `xargs`, `visudo`.
