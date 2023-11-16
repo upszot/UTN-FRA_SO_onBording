@@ -19,12 +19,12 @@
 
 ### Algunos Repositorios que usaremos durante la cursada
 
-- [Ansible](https://github.com/upszot/SO_Docker/tree/master)
-- [pc-workstation](https://github.com/upszot/pc-workstation)
-- [Vagrant](https://github.com/upszot/SO_Docker/tree/master)
-- [Bash](https://github.com/upszot/SO_Docker/tree/master)
-- [Docker](https://github.com/upszot/SO_Docker/tree/master)
-- [Examenes](https://github.com/upszot/SO_Docker/tree/master)
+- [Ansible](https://github.com/upszot/SO_Ansible.git)
+- [pc-workstation](https://github.com/upszot/pc-workstation.git)
+- [Vagrant](https://github.com/upszot/UTN-FRA_SO_Vagrant.git)
+- [Bash](https://github.com/upszot/UTN-FRA_SO_Bash.git)
+- [Docker](https://github.com/upszot/SO_Docker.git)
+- [Examenes](https://github.com/upszot/UTN-FRA_SO_Examenes.git)
 - 
 
 
