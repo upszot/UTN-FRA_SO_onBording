@@ -38,7 +38,8 @@
 
 ### Algunos Temas que aprenderemos durante la cursada.
 
-- [ ] **Preparación del entorno del estudiante: (Es deseable que este todo instalado antes de iniciar la cursada)**
+- [ ] **Preparación del entorno del estudiante: </br>
+    (Es deseable que este todo instalado antes de iniciar la cursada)**
    - Instalación vía Chocolatey / PowerShell de:
      - VirtualBox
      - Vagrant
