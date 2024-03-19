@@ -122,6 +122,8 @@ choco install -y git sublimetext4 virtualbox virtualbox-guest-additions-guest.in
    > Aprende a extraer y filtrar información de archivos y flujos de datos.
 
 - [ ] **Uso básico de VIM:**
+   - [Atajos vim](vim/vim.md) 
+   - [Seteos vim](vim/.vimrc)
    > Introducción al editor de texto VIM para la edición de archivos en la terminal.
 
 - [ ] **Redireccionamiento y Tuberías:**
