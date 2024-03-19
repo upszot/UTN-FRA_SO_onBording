@@ -72,6 +72,16 @@ choco install -y git sublimetext4 virtualbox virtualbox-guest-additions-guest.in
    > Conecta y gestiona el acceso a las máquinas virtuales desde diferentes entornos.
 
 - [ ] **Jerarquía de Estructura de Directorio Linux:**
+   <details>
+     <summary>&emsp; <Mostrar/Ocultar> - Estructura de directorios Linux</summary>
+   <div>
+   <table>
+      <tr>
+         <td><img src="jerarquia/jerarquia_01.png" width="90%" align="center"></td>
+      </tr>
+   </table>
+   </div>
+   </details>
    > Explora la estructura de directorios en sistemas Linux.
 
 - [ ] **Comandos Básicos - Aprender a moverse por la terminal:**
