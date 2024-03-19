@@ -84,6 +84,20 @@ choco install -y git sublimetext4 virtualbox virtualbox-guest-additions-guest.in
    </details>
    > Explora la estructura de directorios en sistemas Linux.
 
+- [ ] **Algunos archivos de configuracion que veremos:**
+   - Configuración del Sistema:
+     - `/etc/passwd`: Archivo que almacena información de cuentas de usuario.
+     - `/etc/shadow`: Archivo que almacena las contraseñas encriptadas de los usuarios.
+     - `/etc/hosts`: Archivo que mapea direcciones IP a nombres de host.
+     - `/etc/sudoers`: Archivo que especifica qué usuarios tienen permiso para ejecutar comandos como superusuario.
+   - Configuración del Usuario:
+     - `$HOME/.ssh/config`: Configuración personalizada para conexiones SSH.
+     - `$HOME/.bashrc`: Archivo de configuración de inicio de la shell Bash.
+     - `$HOME/.bash_history`: Historial de comandos ejecutados en la shell Bash.
+   - Logs del Sistema:
+     - `/var/log/messages`: Registro de mensajes del sistema.
+   > Explora archivos de configuracion y archivos de usuario comunes en sistemas Linux.
+
 - [ ] **Comandos Básicos - Aprender a moverse por la terminal:**
    - Navegación:
      - `pwd`: Mostrar ruta del directorio actual.
