@@ -1,0 +1,2 @@
+# Agrego la configuracion de todos los archivos .conf
+Include ~/.ssh/config.d/*.conf

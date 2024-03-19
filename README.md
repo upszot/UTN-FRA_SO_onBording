@@ -65,7 +65,7 @@ choco install -y git sublimetext4 virtualbox virtualbox-guest-additions-guest.in
 
 - [ ] **Conexión a las VM:**
    - Terminal de VirtualBox.
-   - SSH dentro de PowerShell.
+   - [SSH](ssh/ssh.md) dentro de PowerShell o gitbash.
    - `vagrant ssh`.
    - Conexión por SSH vía PuTTY o MobaXterm.
    - WinSCP.
