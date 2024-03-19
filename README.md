@@ -124,6 +124,9 @@ choco install -y git sublimetext4 virtualbox virtualbox-guest-additions-guest.in
 - [ ] **Uso básico de VIM:**
    - [Atajos vim](vim/vim.md) 
    - [Seteos vim](vim/.vimrc)
+   - [cheat sheet](vim/cheat_sheet_Imprimible.pdf)
+   - [cheat sheet Tutorial](vim/vim_cheat_sheet_tutorial.pdf)
+   - [Video 11' Atajos vim del @PeladoNerd](https://www.youtube.com/watch?v=TmNa4y-K5Z8)
    > Introducción al editor de texto VIM para la edición de archivos en la terminal.
 
 - [ ] **Redireccionamiento y Tuberías:**
