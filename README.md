@@ -28,13 +28,17 @@
 
 ### Distribuciones de GNU/Linux utilizadas.
 > En principio el alumno podra utilizar cualquier distribucion de GNU/Linux que desee. </br>
-> Nosotros en la cursada vamos a hacer referencia a 2 de las distros mas usadas. </br>
+> Nosotros en la cursada vamos a hacer referencia a 2 de las [distros mas usadas](https://distrowatch.com/). </br>
  > Tambien podra elegir el [Entorno de Escritorio](https://es.wikipedia.org/wiki/Entornos_de_Escritorio_en_Linux) que desee ([KDE](https://es.wikipedia.org/wiki/KDE), [GNOME](https://es.wikipedia.org/wiki/GNOME), [Cinnamon](https://es.wikipedia.org/wiki/Cinnamon), [MATE](https://es.wikipedia.org/wiki/MATE) , [Xfce](https://es.wikipedia.org/wiki/Xfce), [Deepin](https://es.wikipedia.org/wiki/Deepin) 
 
-- Nosotros Recomendamos (Por simplicidad y bajos requerimentos de recursos las siguientes)
+- Nosotros Recomendamos Instalar (Por simplicidad y bajos requerimentos de recursos las siguientes)
   - [Ubuntu](https://ubuntu.com/download/desktop) Recomendamos instalar ultima version de Larga Duracion de Soporte (LTS)
   - [Fedora](https://fedoraproject.org/es/spins/) Recomendamos Instalar Fedora Mate-Compiz
-- Tambien levantaremos VM mediante Vagrant.
+- Levantaremos VM de forma automatizada mediante Vagrant.
+- Utilizaremos discos rigidos virtuales con los SO pre-instalados que los pueden bajar de [OSBoxes.org](https://www.osboxes.org/virtualbox-images/)
+- Probaremos multiples distribuciones sin necesidad de instalacion mediante un browser en [Distrosea](https://distrosea.com/)
+- Correr contenedores de docker desde [play-with-docker](https://labs.play-with-docker.com/) sin necesidad de instalarlo.
+- Conocer [kubernetes](https://labs.play-with-k8s.com/) o [Openshift](https://developers.redhat.com/developer-sandbox/activities/learn-kubernetes-using-red-hat-developer-sandbox-openshift) sin necesidad de instalarlo.
 
 ### Algunos Temas que aprenderemos durante la cursada.
 
