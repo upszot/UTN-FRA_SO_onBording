@@ -117,7 +117,7 @@ choco install -y git sublimetext4 virtualbox virtualbox-guest-additions-guest.in
    > Explora archivos de configuracion y archivos de usuario comunes en sistemas Linux.
 
 - [ ] **Comandos Básicos - Aprender a moverse por la terminal:**
-   - Documentación y Ayuda:
+   - [Documentación y Ayuda](comandos_basicos/man.md):
      - `man`: Mostrar el manual del comando.
      - `apropos`: Buscar comandos por palabra clave.
    - Información del Usuario:
