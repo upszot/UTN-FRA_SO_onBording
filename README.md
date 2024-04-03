@@ -117,6 +117,12 @@ choco install -y git sublimetext4 virtualbox virtualbox-guest-additions-guest.in
    > Explora archivos de configuracion y archivos de usuario comunes en sistemas Linux.
 
 - [ ] **Comandos Básicos - Aprender a moverse por la terminal:**
+   - Documentación y Ayuda:
+     - `man`: Mostrar el manual del comando.
+     - `apropos`: Buscar comandos por palabra clave.
+   - Información del Usuario:
+     - `whoami`: Mostrar nombre de usuario.
+     - `id`: Mostrar información de usuario y grupo.
    - Navegación:
      - `pwd`: Mostrar ruta del directorio actual.
      - `ls`: Listar contenido del directorio.
@@ -128,15 +134,9 @@ choco install -y git sublimetext4 virtualbox virtualbox-guest-additions-guest.in
      - `touch`: Crear archivos vacíos o actualizar marcas de tiempo.
      - `cp`: Copiar archivos o directorios.
      - `mv`: Mover o renombrar archivos o directorios.
-   - Información del Usuario:
-     - `whoami`: Mostrar nombre de usuario.
-     - `id`: Mostrar información de usuario y grupo.
    - Información del Sistema y Sesiones:
      - `w`: Mostrar información sobre los usuarios y sus actividades.
      - `last`: Mostrar historial de inicio de sesión.
-   - Documentación y Ayuda:
-     - `man`: Mostrar el manual del comando.
-     - `apropos`: Buscar comandos por palabra clave.
    > Desarrolla habilidades fundamentales para la navegación y manipulación de archivos en la terminal, y aprende a acceder a información detallada con `man` y `apropos`.
 
 - [ ] **Atajos para Moverse Dentro de la Terminal:**
