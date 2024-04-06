@@ -171,9 +171,10 @@ choco install -y git sublimetext4 virtualbox virtualbox-guest-additions-guest.in
    - [Video 11' Atajos vim del @PeladoNerd](https://www.youtube.com/watch?v=TmNa4y-K5Z8)
    > Introducción al editor de texto VIM para la edición de archivos en la terminal.
 
-- [ ] **Redireccionamiento y Tuberías:**
-   - `<<`, `>`, `>>`.
+- [ ] **[Redireccionamiento y Tuberías:](comandos_basicos/Redireccionamiento_tuberias.md)**
+   -  `>`, `>>`, `<<<`,`<<`, `<`, `<< DELIMITADOR > archivo`, 
    - `stdout`, `stdin`, `stderr`.
+   - |
    > Comprende y utiliza redireccionamientos y tuberías en la terminal.
 
 - [ ] **Tuneando tu Terminal:**
