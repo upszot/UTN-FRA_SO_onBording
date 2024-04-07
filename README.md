@@ -195,7 +195,11 @@ choco install -y git sublimetext4 virtualbox virtualbox-guest-additions-guest.in
 
 
 - [ ] **Algunos Comandos Avanzados:**
-   - `awk`, `xargs`, `visudo`.
+   - `awk`: Un potente lenguaje de programación para procesamiento de texto y generación de informes. [Manual](comandos_avanzados/awk.pdf)
+   - `xargs`: Construye y ejecuta comandos, convirtiendo la salida de otros comandos en argumentos de entrada.
+   - `su`: Abreviatura de "Switch User", este comando se utiliza para cambiar de usuario en un sistema Unix o Linux. 
+   - `sudo`: Abreviatura de "Superuser Do", este comando permite a los usuarios ejecutar comandos con los privilegios de otro usuario.
+   - `visudo`: Utilizado para editar el archivo de configuración `/etc/sudoers`, que controla los privilegios de sudo en sistemas Unix.
    > Explora comandos avanzados para el procesamiento de texto y la administración del sistema.
 
 - [ ] **Manejo de Paquetes y Búsqueda de Archivos:**
@@ -265,7 +269,10 @@ choco install -y git sublimetext4 virtualbox virtualbox-guest-additions-guest.in
    > Controla y gestiona servicios del sistema.
 
 - [ ] **Protocolo SSH:**
-   - `ssh-keygen`, `ssh-copyid`.
+   - `ssh`: Se utiliza para iniciar una sesión segura en un servidor remoto. 
+   - `ssh-keygen`: Permite generar pares de claves pública y privada para autenticación SSH.
+   - `ssh-copyid`: Copia la clave pública al servidor remoto, facilitando la autenticación sin contraseña.
+   - [video_Aprendiendo_ssh_Parte1]](https://www.youtube.com/watch?v=RMS5zBYQIqA)
    > Configura y utiliza el protocolo SSH de forma segura.
 
 - [ ] **Aprovisionamiento y Configuración mediante Ansible:**
