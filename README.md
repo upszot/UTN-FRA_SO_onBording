@@ -160,9 +160,14 @@ choco install -y git sublimetext4 virtualbox virtualbox-guest-additions-guest.in
    - `sudo !!`: Ejecutar el último comando con privilegios de superusuario.
    > Facilita la búsqueda de comandos anteriores en la historia de la terminal y agiliza la ejecución con estos atajos específicos.
 
-- [ ] **Obtención y Filtrado de Información:**
-   - `cat`, `grep`, `tail`, `head`.
-   > Aprende a extraer y filtrar información de archivos y flujos de datos.
+- [ ] **Procesamiento de Texto:**
+   - `cat`: Concatena archivos y muestra su contenido.
+   - `grep`: Busca patrones en archivos o flujos de texto.
+   - `tail`: Muestra las últimas líneas de un archivo.
+   - `head`: Muestra las primeras líneas de un archivo.
+   - `sort`: Ordena líneas de texto.
+   - `uniq`: Filtra o elimina líneas duplicadas consecutivas.
+   > Aprende a manipular y filtrar texto de manera eficiente.
 
 - [ ] **Uso básico de VIM:**
    - [Atajos vim](vim/vim.md) 
@@ -183,14 +188,12 @@ choco install -y git sublimetext4 virtualbox virtualbox-guest-additions-guest.in
       - `echo "HISTSIZE=-1" >> ~/.bashrc`: Configurar el historial para guardar comandos indefinidamente.
       - `echo "export HISTCONTROL=\$HISTCONTROL:ignoreboth" >> ~/.bashrc`: Configurar el historial para ignorar comandos duplicados y espacios en blanco consecutivos.
       - `echo "history -a" >> ~/.bashrc`: Automatizar la sincronización del historial al ejecutar un comando.
-
       > Mejora la gestión y persistencia del historial para un trabajo más eficiente.
 
    - [ ] **Agregando Alias:**
       - `mkdir -p ~/aliases.d && echo "export PATH=\$PATH:~/aliases.d" >> ~/.bashrc`: Crear la carpeta `aliases.d` y agregarla al `PATH`.
       - `echo "alias saludo='cowsay Hola \$(whoami)'" >> ~/aliases.d/saludo`: Crear un alias "saludo" que muestra un saludo personalizado usando COWSAY.
       - `echo "alias history-top='history | awk '{CMD[\$2]++;count++;}END { for (a in CMD)print CMD[a] " " CMD[a]/count*100 "% " a;}' | grep -v "./" | column -c3 -s " " -t | sort -nr | nl | head -n10'" >> ~/aliases.d/history-top`: Crear un alias "history-top" que muestra los 10 comandos más utilizados.
-
       > Organiza tus alias en una carpeta dedicada y mejora la legibilidad y mantenimiento de tu entorno.
 
 
@@ -199,7 +202,7 @@ choco install -y git sublimetext4 virtualbox virtualbox-guest-additions-guest.in
    - `xargs`: Construye y ejecuta comandos, convirtiendo la salida de otros comandos en argumentos de entrada.
    - `su`: Abreviatura de "Switch User", este comando se utiliza para cambiar de usuario en un sistema Unix o Linux. 
    - `sudo`: Abreviatura de "Superuser Do", este comando permite a los usuarios ejecutar comandos con los privilegios de otro usuario.
-   - `visudo`: Utilizado para editar el archivo de configuración `/etc/sudoers`, que controla los privilegios de sudo en sistemas Unix.
+   - `visudo`: Utilizado para editar el archivo de configuración `/etc/sudoers`, que controla los privilegios de sudo. [Tutorial](https://www.digitalocean.com/community/tutorials/how-to-edit-the-sudoers-file-es)
    > Explora comandos avanzados para el procesamiento de texto y la administración del sistema.
 
 - [ ] **Manejo de Paquetes y Búsqueda de Archivos:**
@@ -217,14 +220,13 @@ choco install -y git sublimetext4 virtualbox virtualbox-guest-additions-guest.in
      - `dnf update`: Actualizar paquetes instalados.
      - `dnf providers`: Mostrar proveedores de un paquete.
      - Agregar Repositorios en RedHat y Derivados.
-       > Configura y añade repositorios adicionales para acceder a más paquetes.
+         > Configura y añade repositorios adicionales para acceder a más paquetes.
    
    - Búsqueda y Localización de Archivos:
      - `locate`: Buscar archivos o directorios en la base de datos del sistema.
      - `updatedb`: Actualizar la base de datos de `locate`.
      - `whereis`: Mostrar ubicaciones de archivos binarios, fuentes y páginas de manuales.
-     - `whatis`: Mostrar descripción breve de un comando.
-       
+     - `whatis`: Mostrar descripción breve de un comando.       
    > Aprende a gestionar paquetes, actualizar listas, buscar, instalar y configurar repositorios, así como a buscar archivos en sistemas Debian y RedHat.
 
 
@@ -238,35 +240,64 @@ choco install -y git sublimetext4 virtualbox virtualbox-guest-additions-guest.in
 
 
 - [ ] **Permisos:**
-   - `chmod`.
-   > Asigna permisos a archivos y directorios.
+   - `chmod`: Cambia los permisos de archivos y directorios.
+   - `chown`: Cambia el propietario de archivos y directorios.
+   > Gestiona los permisos y la propiedad de archivos y directorios en el sistema.
 
 - [ ] **Particionamiento, Formateo y Montado:**
-   - `dmesg`, `fdisk`, `mkfs.ext4`, `df`, `lsblk`.
-   - `/etc/fstab`, `mount`, `umount`.
+   - `dmesg`: Muestra el buffer de mensajes del kernel, útil para diagnosticar problemas durante el arranque del sistema.
+   - `fdisk`: Una herramienta para manipular la tabla de particiones en sistemas Unix y Linux.
+   - `mkfs.ext4`: Crea un sistema de archivos ext4 en una partición específica.
+   - `df`: Muestra el espacio utilizado y disponible en los sistemas de archivos montados.
+   - `lsblk`: Lista información sobre los dispositivos de bloque, incluidas sus particiones.
+   - `/etc/fstab`: Archivo de configuración que contiene información sobre los sistemas de archivos y opciones de montaje.
+   - `mount`: Monta un sistema de archivos en una ubicación específica del árbol de directorios.
+   - `umount`: Desmonta un sistema de archivos previamente montado.
    > Trabaja con particiones, formateo y montado de sistemas de archivos.
 
 - [ ] **LVM (Logical Volume Management):**
-   - `pvcreate`, `vgcreate`, `lvcreate`, `vgextend`, `lvextend`.
-   - `resize2fs`, `lvremove`, `vgremove`, `pcremove`.
+   - `pvcreate`: Crea un nuevo volumen físico para su uso en LVM.
+   - `vgcreate`: Crea un nuevo grupo de volúmenes (Volume Group) en LVM.
+   - `lvcreate`: Crea un nuevo volumen lógico (Logical Volume) en LVM.
+   - `vgextend`: Extiende un grupo de volúmenes existente en LVM.
+   - `lvextend`: Extiende un volumen lógico existente en LVM.
+   - `resize2fs`: Ajusta el tamaño del sistema de archivos ext2, ext3 o ext4 para que coincida con el tamaño del volumen lógico que lo contiene.
+   - `lvremove`: Elimina un volumen lógico en LVM.
+   - `vgremove`: Elimina un grupo de volúmenes en LVM.
+   - `pcremove`: Elimina una etiqueta de un volumen físico en LVM.
    > Gestiona volúmenes lógicos para una administración de almacenamiento más flexible.
 
 - [ ] **Memoria Swap:**
-   - `free`, `mkswap`, `swapon`, `swapoff`.
+   - `free`: Muestra la cantidad de memoria RAM libre y utilizada en el sistema, así como la memoria swap.
+   - `mkswap`: Prepara una partición o archivo para ser utilizado como memoria swap.
+   - `swapon`: Activa un área de intercambio, permitiendo que el sistema la utilice como memoria virtual adicional.
+   - `swapoff`: Desactiva una área de intercambio, liberando la memoria utilizada como swap.
    > Configura y gestiona la memoria swap del sistema.
 
 - [ ] **Procesos:**
-   - `ps`, `top`.
+   - `ps`: Muestra información sobre los procesos en ejecución en el sistema.
+   - `top`: Proporciona una lista dinámica de los procesos en ejecución y sus recursos consumidos.
    - Procesos en segundo nivel.
    > Monitorea y gestiona procesos en el sistema.
 
 - [ ] **Bash Scripting:**
-   - `if`, `for`, `while`.
-   - Variables.
+   - `if`: Utilizado en scripts Bash para realizar una acción si se cumple una condición.
+   - `for`: Estructura de bucle utilizada para iterar sobre una lista de elementos en scripts Bash.
+   - `while`: Estructura de bucle utilizada para repetir una acción mientras se cumple una condición en scripts Bash.
+   - `case`: Estructura de control de flujo utilizada para comparar una variable con múltiples valores en scripts Bash.
+   - Variables: Permiten almacenar y manipular datos en scripts Bash.
    > Automatiza tareas mediante scripts Bash.
 
 - [ ] **Manejo de Servicios con Systemctl:**
-   > Controla y gestiona servicios del sistema.
+   - `systemctl start <service>`: Inicia un servicio específico.
+   - `systemctl stop <service>`: Detiene un servicio específico.
+   - `systemctl restart <service>`: Reinicia un servicio específico.
+   - `systemctl status <service>`: Muestra el estado de un servicio específico.
+   - `systemctl enable <service>`: Habilita un servicio para que se inicie automáticamente al arrancar el sistema.
+   - `systemctl disable <service>`: Deshabilita un servicio para que no se inicie automáticamente al arrancar el sistema.
+   - `systemctl list-units --type=service`: Lista todos los servicios disponibles en el sistema.
+   > Controla y gestiona servicios del sistema utilizando Systemctl.
+
 
 - [ ] **Protocolo SSH:**
    - `ssh`: Se utiliza para iniciar una sesión segura en un servidor remoto. 
@@ -276,15 +307,41 @@ choco install -y git sublimetext4 virtualbox virtualbox-guest-additions-guest.in
    > Configura y utiliza el protocolo SSH de forma segura.
 
 - [ ] **Aprovisionamiento y Configuración mediante Ansible:**
-   > Automatiza la configuración y aprovisionamiento de sistemas.
+   - Playbooks: Archivos YAML que definen las tareas a realizar en los sistemas remotos.
+   - Roles: Conjuntos de tareas y configuraciones agrupadas de manera lógica y reutilizable en Ansible.
+   - `ansible-playbook`: Comando para ejecutar playbooks de Ansible.
+   - `ansible-galaxy`: Herramienta para gestionar roles de Ansible de la comunidad.
+   - Inventarios: Archivos que especifican los hosts gestionados por Ansible.
+   - Módulos: Funciones individuales que Ansible ejecuta en los hosts gestionados para realizar tareas específicas.
+   > Automatiza la configuración y aprovisionamiento de sistemas mediante Ansible.
+
 
 - [ ] **Docker:**
+   - Contenedor: Una instancia ejecutable de un entorno de software que incluye todo lo necesario para ejecutar una aplicación.
+   - Imagen: Un paquete de software ligero y portátil que contiene todo lo necesario para ejecutar una aplicación, incluidas las dependencias, el código, las bibliotecas y las configuraciones.
+   - `docker run`: Comando para ejecutar un contenedor a partir de una imagen.
+   - `docker build`: Comando para construir una nueva imagen a partir de un Dockerfile.
+   - `docker pull`: Comando para descargar una imagen de un registro de Docker.
+   - `docker push`: Comando para subir una imagen a un registro de Docker.
+   - `docker ps`: Muestra los contenedores en ejecución.
+   - `docker images`: Lista las imágenes disponibles en el sistema.
+   - `docker exec`: Ejecuta un comando dentro de un contenedor en ejecución.
+   - `docker rm`: Elimina uno o más contenedores.
+   - `docker rmi`: Elimina una o más imágenes.
+   - `docker-compose`: Herramienta para definir y ejecutar aplicaciones Docker multi-contenedor.
    > Introducción a la virtualización de contenedores con Docker.
 
+
 - [ ] **Herramienta de Redes:**
-   - `curl`, `wget`, `nmap`, `nc`, `telnet`.
-   - `ip`, `ifconfig`.
+   - `curl`: Herramienta de línea de comandos para transferir datos con sintaxis URL.
+   - `wget`: Herramienta de línea de comandos para descargar archivos desde servidores web.
+   - `nmap`: Utilidad para el descubrimiento de dispositivos en una red y el mapeo de puertos.
+   - `nc`: Herramienta para leer y escribir datos a través de conexiones de red.
+   - `telnet`: Cliente de telnet para establecer conexiones de terminal con hosts remotos.
+   - `ip`: Herramienta para mostrar o manipular la información de la red y las rutas de la IP.
+   - `ifconfig`: Utilidad obsoleta para configurar interfaces de red en sistemas Unix y Linux.
    > Explora herramientas de red para diagnóstico y configuración.
+
 
 - [ ] **Protocolo HTTP:**
    - `curl -X GET / POST..`
