@@ -76,6 +76,7 @@ choco install -y git sublimetext4 virtualbox virtualbox-guest-additions-guest.in
 
 
 - [ ] **Generación de VM dentro de VirtualBox:**
+   - Creacion VM Manualmente VirtualBox [PDF](vm/Creacion-de-la-maquina-virtual.pdf)
    - Creación e instalación de Linux de forma tradicional. [Video](https://www.youtube.com/watch?v=lp5DnhwWt-M)
    - Uso de una imagen de disco descargada de [OSBoxes.org](https://www.osboxes.org/virtualbox-images/).
    - Generación de VM mediante [Vagrant](https://github.com/upszot/UTN-FRA_SO_Vagrant.git).
