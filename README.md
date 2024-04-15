@@ -78,6 +78,7 @@ choco install -y git sublimetext4 virtualbox virtualbox-guest-additions-guest.in
 - [ ] **Generación de VM dentro de VirtualBox:**
    - Creacion VM Manualmente VirtualBox [PDF](vm/Creacion-de-la-maquina-virtual.pdf)
    - Creación e instalación de Linux de forma tradicional. [Video](https://www.youtube.com/watch?v=lp5DnhwWt-M)
+   - [Instlar VirtualBox-Guest-additions dentro de la VM](https://www.linuxtechi.com/install-virtualbox-guest-additions-on-ubuntu/)
    - Uso de una imagen de disco descargada de [OSBoxes.org](https://www.osboxes.org/virtualbox-images/).
    - Generación de VM mediante [Vagrant](https://github.com/upszot/UTN-FRA_SO_Vagrant.git).
    > Crea y gestiona máquinas virtuales para propósitos de aprendizaje.
@@ -102,6 +103,12 @@ choco install -y git sublimetext4 virtualbox virtualbox-guest-additions-guest.in
    </div>
    </details>
    > Explora la estructura de directorios en sistemas Linux.
+
+- [ ]**Comandos Configuraciones Basicas**
+   - `hostnamectl set-hostname pc-pepe`: Cambiar el Nombre de la pc.
+   - `localectl set-keymap us`: Cambiar configuracion del teclado a Ingles
+   - `localectl set-keymap latam`: Cambiar configuracion del teclado a Español latino
+   > Algunos comandos extras para configurar el equipo.
 
 - [ ] **Algunos archivos de configuracion que veremos:**
    - Configuración del Sistema:
@@ -349,4 +356,3 @@ choco install -y git sublimetext4 virtualbox virtualbox-guest-additions-guest.in
 
 - [ ] **Kubernetes (Deseable):**
    > Conceptos básicos de Kubernetes, si el tiempo y el interés lo permiten.
-
