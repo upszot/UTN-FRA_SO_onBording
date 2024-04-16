@@ -212,29 +212,53 @@ choco install -y git sublimetext4 virtualbox virtualbox-guest-additions-guest.in
    - `visudo`: Utilizado para editar el archivo de configuración `/etc/sudoers`, que controla los privilegios de sudo. [Tutorial](https://www.digitalocean.com/community/tutorials/how-to-edit-the-sudoers-file-es)
    > Explora comandos avanzados para el procesamiento de texto y la administración del sistema.
 
-- [ ] **Manejo de Paquetes y Búsqueda de Archivos:**
+- [ ] **Manejo de Paquetes [Equivalencias_apt_vs_dnf](https://docs.fedoraproject.org/es/quick-docs/dnf-vs-apt/)**
    - Debian y Derivados (apt):
      - `apt update`: Actualizar la lista de paquetes disponibles.
      - `apt search`: Buscar paquetes.
      - `apt install`: Instalar paquetes.
      - `apt upgrade`: Actualizar paquetes instalados a las versiones más recientes.
      - `apt show`: Mostrar información detallada de un paquete, incluyendo proveedores.
+     - `apt list`: Listar todos los paquetes disponibles.
+     - `apt list --installed`: Listar todos los paquetes instalados.
+     - `dpkg -l `: Listar todos los paquetes instalados. (En Distribuciones mas viejas derivadas de debian)
      - Agregar Repositorios en Debian y Derivados.
-       > Configura y añade repositorios adicionales para acceder a más paquetes.
-
+     </br>Extras:</br>
+     - `sudo apt list --installed | awk -F/ -v ORS=" " 'NR>1 {print $1}' > completePackage.txt `: Generar una lista de todos los paquetes instalados
+     - `sudo apt install < completePackage.txt `: Instalar todos los paquetes de la lista.
+     - `sudo apt install -y ubuntu-mate-desktop`: Instalar Entorno de Escritorio Mate.
+     - `sudo apt install -y kde-standard`: Instalar Entorno de Escritorio KDE-Plasma.
+       > Configura y añade repositorios adicionales para acceder a más paquetes. 
+  
    - RedHat y Derivados (dnf):
      - `dnf search`: Buscar paquetes.
+     - `dnf install`: Instalar paquetes.
      - `dnf update`: Actualizar paquetes instalados.
+     - `dnf info`: Mostrar información detallada de un paquete, incluyendo proveedores.
+     - `dnf list installed`: Listar todos los paquetes instalados.
+     - `rpm -aq`: Listar todos los paquetes instalados (En Distribuciones mas viejas derivadas de RedHat).
      - `dnf providers`: Mostrar proveedores de un paquete.
+     - `dnf repolist`: Mostrar listado de repositorios.
+     - `dnf clean all`: Limpiar cache, metadata y paquetes obsoletos.
      - Agregar Repositorios en RedHat y Derivados.
+     </br>Extras:</br>
+     - `dnf repository-packages epel list installed`: Mostrar listado de paquetes instalados de un repositorios espesifico.
+     - `dnf group install "KDE Plasma Workspaces"`: Instalar el Entorno de Escritorio KDE-Plasma.
+     - `dnf install @kde-desktop-environment`: Instalar el Entorno de Escritorio KDE-Plasma.
+     - `dnf groupinstall 'MATE Desktop' 'MATE Applications'`: Instalar el Entorno de Escritorio Mate y aplicaciones Mate.
+     - `dnf group install "Deepin Desktop"`: Instalar el Entorno de Escritorio Deepin.
          > Configura y añade repositorios adicionales para acceder a más paquetes.
-   
+
+   > Aprende a gestionar paquetes, actualizar listas, buscar, instalar y configurar repositorios.
+
+- [ ] **Búsqueda de Archivos:**
    - Búsqueda y Localización de Archivos:
      - `locate`: Buscar archivos o directorios en la base de datos del sistema.
      - `updatedb`: Actualizar la base de datos de `locate`.
      - `whereis`: Mostrar ubicaciones de archivos binarios, fuentes y páginas de manuales.
-     - `whatis`: Mostrar descripción breve de un comando.       
-   > Aprende a gestionar paquetes, actualizar listas, buscar, instalar y configurar repositorios, así como a buscar archivos en sistemas Debian y RedHat.
+     - `whatis`: Mostrar descripción breve de un comando.
+     - `find`: Buscar archivos y directorios en función de varios criterios.
+   > Aprende a Buscar archivos en sistemas Debian y RedHat.
 
 
 - [ ] **Creación de Usuarios y Grupos:**
