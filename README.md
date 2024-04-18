@@ -73,6 +73,11 @@ choco install -y git sublimetext4 virtualbox virtualbox-guest-additions-guest.in
      - [Intel](https://www.intel.la/content/www/xl/es/support/articles/000005486/processors.html)
      - [Multiples marcas](https://hardzone.es/2018/12/06/virtualizacion-cpu-como-activarla-ventajas/)
    > Verificar y Configura la PC para virtualizar equipos.
+   
+   - Para los que tienen Mac (M1 o M2)
+     - [Multipass](https://reviblog.net/2021/11/13/como-virtualizar-de-manera-gratuita-ubuntu-linux-en-los-mac-con-chip-m1/)
+
+   > Configura la PC (Mac con Microprocesadores M1 o M2) para virtualizar equipos.
 
 
 - [ ] **Generación de VM dentro de VirtualBox:**
