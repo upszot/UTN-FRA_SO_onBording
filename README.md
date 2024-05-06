@@ -266,7 +266,7 @@ choco install -y git sublimetext4 virtualbox virtualbox-guest-additions-guest.in
    > Aprende a Buscar archivos en sistemas Debian y RedHat.
 
 
-- [ ] **Creación de Usuarios y Grupos:**
+- [ ] **[Creación de Usuarios y Grupos:](./user_group/user_group.md)**
    - `useradd`, `groupadd`, `usermod`, `id`.
    - Archivos de configuración relacionados:
      - `/etc/passwd`: Contiene información de cuentas de usuario.

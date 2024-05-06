@@ -90,7 +90,7 @@ linea3
    <div>
    <table>
       <tr>
-         <td><img src="../img/Redireccionamiento_Tuberias.png" width="90%" align="center"></td>
+         <td><img src="../.img/Redireccionamiento_Tuberias.png" width="90%" align="center"></td>
       </tr>
    </table>
    </div>
