@@ -35,13 +35,20 @@ Usando el comando `ls -l`, verás algo como esto:
 
 El primer carácter indica el tipo de archivo:
 
-- **-**: Archivo regular.
 - **d**: Directorio.
+- **-**: Archivo regular.
 - **l**: Enlace simbólico (soft link).
 - **c**: Archivo de dispositivo de carácter.
 - **b**: Archivo de dispositivo de bloque.
 - **p**: Tubería (pipe).
 - **s**: Socket.
+<div>
+<table>
+   <tr>
+      <td><img src="../.img/permisos/Tipos_Archivos.png" width="99%" align="center"></td>
+   </tr>
+</table>
+</div>
 
 ### Permisos Estándares
 
