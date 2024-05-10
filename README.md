@@ -275,9 +275,9 @@ choco install -y git sublimetext4 virtualbox virtualbox-guest-additions-guest.in
    > Gestiona usuarios y grupos en el sistema y explora los archivos de configuración asociados para entender su funcionamiento.
 
 
-- [ ] **Permisos:**
-   - `chmod`: Cambia los permisos de archivos y directorios.
+- [ ] **[Owner y Permisos:](./Owner_Permisos/Owner_Permisos.md)**
    - `chown`: Cambia el propietario de archivos y directorios.
+   - `chmod`: Cambia los permisos de archivos y directorios.
    > Gestiona los permisos y la propiedad de archivos y directorios en el sistema.
 
 - [ ] **Particionamiento, Formateo y Montado:**
