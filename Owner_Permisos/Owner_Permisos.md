@@ -115,8 +115,25 @@ Tambien lo pueden aplicar en forma recursiva con la opcion -R `chmod -R 755 dire
 
 ### Permisos Especiales (Material Extra)
 
-Además de los permisos básicos, Linux tiene permisos especiales que pueden aparecer en lugar del carácter de ejecución (`x`):
+Además de los permisos básicos (RWX), existen permisos especiales conocidos como `setuid`, `setgid`, y `sticky bit`. 
 
-- **s**: SUID/SGID (Set User/Group ID). Cuando un archivo tiene el permiso SUID, se ejecutará con los privilegios del propietario. Si es SGID, se ejecutará con los privilegios del grupo. Para directorios, SGID implica que los archivos creados dentro heredan el grupo del directorio.
-- **t**: Sticky bit. Si un directorio tiene este permiso, solo el propietario del archivo puede eliminar o modificar archivos en ese directorio, incluso si otros tienen permisos de escritura.
 
+## `setuid` (Set User ID)
+- Este permiso especial se indica con una `s` en lugar de la `x` de ejecución en los permisos del propietario.
+- Cuando se establece en un archivo ejecutable, cualquier usuario que lo ejecute obtiene los privilegios del propietario del archivo. 
+- Por ejemplo, si un ejecutable tiene el `setuid` y el propietario es `root`, cualquier usuario que lo ejecute tendrá privilegios de superusuario durante la ejecución del archivo.
+
+## `setgid` (Set Group ID)
+- Este permiso especial se indica con una `s` en lugar de la `x` de ejecución en los permisos del grupo.
+- Cuando se establece en un archivo ejecutable, el proceso que se ejecuta hereda el grupo del archivo, independientemente del grupo del usuario que lo ejecute.
+- En un directorio, el `setgid` hace que los archivos y subdirectorios creados dentro de él hereden el grupo del directorio, en lugar del grupo primario del usuario que los crea.
+
+## `Sticky Bit`
+- Este permiso especial se indica con una `t` al final de los permisos para otros.
+- Se utiliza principalmente en directorios como `/tmp` para controlar quién puede eliminar archivos. 
+- Con el `sticky bit` activado, solo el propietario del archivo o el superusuario puede eliminar o renombrar archivos, incluso si otros tienen permisos de escritura en el directorio.
+
+## Ejemplos de Uso
+- Para agregar el `setuid` a un archivo ejecutable, se usa el comando: `chmod u+s <archivo>`.
+- Para agregar el `setgid`, se usa: `chmod g+s <archivo>`.
+- Para agregar el `sticky bit`, se usa: `chmod +t <directorio>`.
