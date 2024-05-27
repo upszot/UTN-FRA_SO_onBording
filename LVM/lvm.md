@@ -8,6 +8,15 @@ LVM es una tecnología de gestión de almacenamiento para sistemas Linux. Permit
 - **Volume Group (VG)**: Un grupo de volúmenes físicos que actúan como una única unidad de almacenamiento.
 - **Logical Volume (LV)**: Un volumen lógico que se crea dentro de un grupo de volúmenes.
 
+<div>
+<table>
+   <tr>
+      <td><img src="../.img/lvm/linux-lvm-specifics.jpg" width="99%" align="center"></td>
+   </tr>
+</table>
+</div>
+
+
 ## Ventajas de LVM
 - **Flexibilidad**: Puedes redimensionar volúmenes lógicos sin afectar a otros datos.
 - **Snapshots**: Permite crear "fotos" de volúmenes para fines de respaldo o pruebas.
