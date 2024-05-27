@@ -280,7 +280,7 @@ choco install -y git sublimetext4 virtualbox virtualbox-guest-additions-guest.in
    - `chmod`: Cambia los permisos de archivos y directorios.
    > Gestiona los permisos y la propiedad de archivos y directorios en el sistema.
 
-- [ ] **Particionamiento, Formateo y Montado:**
+- [ ] **[Particionamiento, Formateo y Montado:](Particionamiento_standar/Particionamiento_standar.md)**
    - `dmesg`: Muestra el buffer de mensajes del kernel, útil para diagnosticar problemas durante el arranque del sistema.
    - `fdisk`: Una herramienta para manipular la tabla de particiones en sistemas Unix y Linux.
    - `mkfs.ext4`: Crea un sistema de archivos ext4 en una partición específica.
@@ -291,7 +291,7 @@ choco install -y git sublimetext4 virtualbox virtualbox-guest-additions-guest.in
    - `umount`: Desmonta un sistema de archivos previamente montado.
    > Trabaja con particiones, formateo y montado de sistemas de archivos.
 
-- [ ] **LVM (Logical Volume Management):**
+- [ ] **[LVM - Logical Volume Management:](LVM/lvm.md)**
    - `pvcreate`: Crea un nuevo volumen físico para su uso en LVM.
    - `vgcreate`: Crea un nuevo grupo de volúmenes (Volume Group) en LVM.
    - `lvcreate`: Crea un nuevo volumen lógico (Logical Volume) en LVM.
@@ -301,6 +301,7 @@ choco install -y git sublimetext4 virtualbox virtualbox-guest-additions-guest.in
    - `lvremove`: Elimina un volumen lógico en LVM.
    - `vgremove`: Elimina un grupo de volúmenes en LVM.
    - `pcremove`: Elimina una etiqueta de un volumen físico en LVM.
+   - **[Machete de LVM](LVM/Machete_LVM.md)**
    > Gestiona volúmenes lógicos para una administración de almacenamiento más flexible.
 
 - [ ] **Memoria Swap:**

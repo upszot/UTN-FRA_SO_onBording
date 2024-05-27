@@ -39,7 +39,7 @@ LVM es una tecnología de gestión de almacenamiento para sistemas Linux. Permit
   - 5. Extendemos el VG
 
 
-- [ ] 
+- [ ] ** Resumen de comandos **
 
   - `pvcreate`: Crea un nuevo volumen físico para su uso en LVM.
   - `vgcreate`: Crea un nuevo grupo de volúmenes (Volume Group) en LVM.
