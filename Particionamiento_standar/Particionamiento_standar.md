@@ -25,11 +25,13 @@ fdisk /dev/$DISCO
 sudo mkfs -t ext4 /dev/sdb1 
 sudo mkfs.ext4 /dev/sdb2 
 sudo mkfs.ntfs /dev/sdb3
+sudo mkswap/dev/sdb4
  ```
 - Una vez realizadas Creados los FS para cada particion podemos montarlos para empezar a utilizarlos.
  ```sh
 sudo mount /dev/sdb1 /mnt/Particion_01
 sudo mount /dev/sdb2 /mnt/Particion_02
 sudo mount /dev/sdb3 /mnt/Particion_03
+sudo swapon /dev/sdb4
  ```
 

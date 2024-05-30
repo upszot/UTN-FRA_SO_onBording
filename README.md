@@ -224,9 +224,13 @@ choco install -y git sublimetext4 virtualbox virtualbox-guest-additions-guest.in
      - `apt install`: Instalar paquetes.
      - `apt upgrade`: Actualizar paquetes instalados a las versiones más recientes.
      - `apt show`: Mostrar información detallada de un paquete, incluyendo proveedores.
+     - `apt policy`: Mostrar las versiones instaladas y disponibles de un paquete.
      - `apt list`: Listar todos los paquetes disponibles.
      - `apt list --installed`: Listar todos los paquetes instalados.
      - `dpkg -l `: Listar todos los paquetes instalados. (En Distribuciones mas viejas derivadas de debian)
+     - `apt-mark hold <package_name>`: Fijar versión de un paquete.
+     - `apt-mark unhold <package_name>`: Liberar un paquete para actualización.
+     - `apt-mark showhold`: Mostrar listado de paquetes bloqueados.
      - Agregar Repositorios en Debian y Derivados.
      </br>Extras:</br>
      - `sudo apt list --installed | awk -F/ -v ORS=" " 'NR>1 {print $1}' > completePackage.txt `: Generar una lista de todos los paquetes instalados
@@ -245,6 +249,8 @@ choco install -y git sublimetext4 virtualbox virtualbox-guest-additions-guest.in
      - `dnf providers`: Mostrar proveedores de un paquete.
      - `dnf repolist`: Mostrar listado de repositorios.
      - `dnf clean all`: Limpiar cache, metadata y paquetes obsoletos.
+     - `dnf versionlock add <package_name>-<version>`: Fijar versión de un paquete.
+     - `dnf versionlock delete <package_name>`: Liberar un paquete para actualización.
      - Agregar Repositorios en RedHat y Derivados.
      </br>Extras:</br>
      - `dnf repository-packages epel list installed`: Mostrar listado de paquetes instalados de un repositorios espesifico.

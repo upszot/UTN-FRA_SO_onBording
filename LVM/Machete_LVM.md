@@ -33,7 +33,7 @@ lvcreate -l +100%FREE  vg_oracle -n lv_oracle
 #6. crear el fs 
 mkfs.ext4 /dev/mapper/vg_oracle-lv_oracle
 	#6 Bis. Si ya existe  ->  agrandar fs (si el fs es xfs usar xfs_growfs)
-	resize2fs /dev/mapper/vg_oracle-lv_oracl
+	resize2fs /dev/mapper/vg_oracle-lv_oracle
 ```
 
 - Para Achicar / quitar
@@ -41,17 +41,17 @@ mkfs.ext4 /dev/mapper/vg_oracle-lv_oracle
 # 1. Desmonto el lv
 umount /home/
 
-# 2. chekear Errores
-e2fsck -f /dev/mapper/fedora-home
+# 2. chekear Errores y repara
+e2fsck -f /dev/mapper/vg_hdd-lv_home
 
 # 3. Achicar el File System
-resize2fs /dev/mapper/fedora-home  30G
+resize2fs /dev/mapper/vg_hdd-lv_home  30G
 
 # 4. Reducir el logical volume
-lvreduce -L 30G /dev/mapper/fedora-home
+lvreduce -L 30G /dev/mapper/vg_hdd-lv_home
 
-# 5. chekear Errores
-e2fsck -f /dev/mapper/fedora-home
+# 5. chekear Errores y repara
+e2fsck -f /dev/mapper/vg_hdd-lv_home
 
 # 6. Volver a Montar
 mount /home/
