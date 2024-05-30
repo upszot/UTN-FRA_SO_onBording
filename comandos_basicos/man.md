@@ -2,6 +2,15 @@
 
 ## man  (interfaz de los manuales de referencia del sistema)
 
+<div>
+<table>
+   <tr>
+      <td><img src="../.img/man_Secciones.png" width="99%" align="center"></td>
+   </tr>
+</table>
+</div>
+
+
 - Ejemplos de  distintas secciones de man
 ```sh
 # Seccion 1   Programas ejecutables u órdenes de la shell 
