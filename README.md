@@ -217,49 +217,27 @@ choco install -y git sublimetext4 virtualbox virtualbox-guest-additions-guest.in
    - `visudo`: Utilizado para editar el archivo de configuración `/etc/sudoers`, que controla los privilegios de sudo. [Tutorial](https://www.digitalocean.com/community/tutorials/how-to-edit-the-sudoers-file-es)
    > Explora comandos avanzados para el procesamiento de texto y la administración del sistema.
 
-- [ ] **Manejo de Paquetes [Equivalencias_apt_vs_dnf](https://docs.fedoraproject.org/es/quick-docs/dnf-vs-apt/)**
-   - Debian y Derivados (apt):
-     - `apt update`: Actualizar la lista de paquetes disponibles.
-     - `apt search`: Buscar paquetes.
-     - `apt install`: Instalar paquetes.
-     - `apt upgrade`: Actualizar paquetes instalados a las versiones más recientes.
-     - `apt show`: Mostrar información detallada de un paquete, incluyendo proveedores.
-     - `apt policy`: Mostrar las versiones instaladas y disponibles de un paquete.
-     - `apt list`: Listar todos los paquetes disponibles.
-     - `apt list --installed`: Listar todos los paquetes instalados.
-     - `dpkg -l `: Listar todos los paquetes instalados. (En Distribuciones mas viejas derivadas de debian)
-     - `apt-mark hold <package_name>`: Fijar versión de un paquete.
-     - `apt-mark unhold <package_name>`: Liberar un paquete para actualización.
-     - `apt-mark showhold`: Mostrar listado de paquetes bloqueados.
-     - Agregar Repositorios en Debian y Derivados.
-     </br>Extras:</br>
-     - `sudo apt list --installed | awk -F/ -v ORS=" " 'NR>1 {print $1}' > completePackage.txt `: Generar una lista de todos los paquetes instalados
-     - `sudo apt install < completePackage.txt `: Instalar todos los paquetes de la lista.
-     - `sudo apt install -y ubuntu-mate-desktop`: Instalar Entorno de Escritorio Mate.
-     - `sudo apt install -y kde-standard`: Instalar Entorno de Escritorio KDE-Plasma.
-       > Configura y añade repositorios adicionales para acceder a más paquetes. 
-  
-   - RedHat y Derivados (dnf):
-     - `dnf search`: Buscar paquetes.
-     - `dnf install`: Instalar paquetes.
-     - `dnf update`: Actualizar paquetes instalados.
-     - `dnf info`: Mostrar información detallada de un paquete, incluyendo proveedores.
-     - `dnf list installed`: Listar todos los paquetes instalados.
-     - `rpm -aq`: Listar todos los paquetes instalados (En Distribuciones mas viejas derivadas de RedHat).
-     - `dnf providers`: Mostrar proveedores de un paquete.
-     - `dnf repolist`: Mostrar listado de repositorios.
-     - `dnf clean all`: Limpiar cache, metadata y paquetes obsoletos.
-     - `dnf versionlock add <package_name>-<version>`: Fijar versión de un paquete.
-     - `dnf versionlock delete <package_name>`: Liberar un paquete para actualización.
-     - Agregar Repositorios en RedHat y Derivados.
-     </br>Extras:</br>
-     - `dnf repository-packages epel list installed`: Mostrar listado de paquetes instalados de un repositorios espesifico.
-     - `dnf group install "KDE Plasma Workspaces"`: Instalar el Entorno de Escritorio KDE-Plasma.
-     - `dnf install @kde-desktop-environment`: Instalar el Entorno de Escritorio KDE-Plasma.
-     - `dnf groupinstall 'MATE Desktop' 'MATE Applications'`: Instalar el Entorno de Escritorio Mate y aplicaciones Mate.
-     - `dnf group install "Deepin Desktop"`: Instalar el Entorno de Escritorio Deepin.
-         > Configura y añade repositorios adicionales para acceder a más paquetes.
+- [ ] **[Manejo de Repositorios](./Repositorios_Paquetes/Manejo_de_Repositorios.md)**
+   - Listar Repositorios configurados en la pc
+   - Agregar Repositorios.
+   - Habilitar / Deshabilitar Repositorios
+   - Instalar Clave Publica de un Repositorio
+   - Encontrar los mirrors de repositorios con menor latencia
+   > Aprende a gestionar repositorios.
 
+- [ ] **[Gestion de Paquetes](./Repositorios_Paquetes/Gestion_de_Paquetes.md)**
+   - [Equivalencias_apt_vs_dnf](https://docs.fedoraproject.org/es/quick-docs/dnf-vs-apt/)**
+   - Gestores de paquetes (Debian y derivados vs RedHat y derivados)
+   - Buscar un paquete
+   - Instalar un paquete
+   - Actualizar un paquete
+   - Bloquear un paquete para su NO actualizacion
+   - remover un paquete
+   - Conocer los paquetes que tengo instalados
+   - generar una lista de todos los paquetes instalados y usarla para instalarlos en otro equipo.
+   - Instalar Grupos de paquetes (distintos Entornos de Escritorios)
+   - Conocer en que paquete se encuentra un comando.
+   - otros....
    > Aprende a gestionar paquetes, actualizar listas, buscar, instalar y configurar repositorios.
 
 - [ ] **Búsqueda de Archivos:**

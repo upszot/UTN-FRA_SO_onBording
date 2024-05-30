@@ -1,4 +1,4 @@
-# Repositorios y Gestión de Paquetes en Linux
+# Manejo de Repositorios 
 
 ## ¿Qué es un repositorio de Linux?
 
@@ -107,33 +107,3 @@
     # Descargar e importar el certificado de clave pública del repositorio
     sudo dnf install http://example-repo-url/RPM-GPG-KEY-example
     ```
-
-## Manejo de Paquetes
-
-- [ ] **Fijar una versión específica de un paquete**
-  - **Debian y Derivados**
-    ```sh
-    # Fijar versión de un paquete:
-    sudo apt-mark hold <package_name>
-
-    # Liberar un paquete para actualización:
-    sudo apt-mark unhold <package_name>
-    ```
-  - **RedHat y Derivados**
-    ```sh
-    # Instalo el plugin para dnf de versionlock
-    sudo dnf install python3-dnf-plugin-versionlock
-
-    # Fijar versión de un paquete:
-    sudo dnf versionlock add <package_name>-<version>
-
-    # Liberar un paquete para actualización:
-    sudo dnf versionlock delete <package_name>
-    ```
-
-
-
-## Extras:
-- [ ] **Repositorio Oficial Docker:**
-  - [Instalacion Docker Ubuntu](https://docs.docker.com/engine/install/ubuntu/) 
-  - [Instalacion Docker Fedora](https://docs.docker.com/engine/install/fedora/)
