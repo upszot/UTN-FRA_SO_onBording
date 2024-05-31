@@ -5,10 +5,9 @@
 
 
 
-- [ ]**Creacion y Agrandar**
+- [X] **Creacion y Agrandar**
 > Supongamos que agregamos un disco rigido y el mismo es reconocido por el sistema como "sdb" </br>
 
-- Para Crear y Agrandar
  ```sh
 #1. Agregar disco... crear particio 8e en el disco nuevo (fdisk)
 #2. Crear particion disco tipo lvm (8e) 
@@ -34,9 +33,15 @@ lvcreate -l +100%FREE  vg_oracle -n lv_oracle
 mkfs.ext4 /dev/mapper/vg_oracle-lv_oracle
 	#6 Bis. Si ya existe  ->  agrandar fs (si el fs es xfs usar xfs_growfs)
 	resize2fs /dev/mapper/vg_oracle-lv_oracle
+
+#7. Montar Normalmente
+sudo mount /dev/mapper/vg_oracle-lv_oracle /DB_Oracle
 ```
 
-- Para Achicar / quitar
+
+- [ ] **Achicar lv y fileSystem**
+> Supongamos que Necesitamos achicar el home </br>
+
 ```sh
 # 1. Desmonto el lv
 umount /home/
@@ -55,4 +60,41 @@ e2fsck -f /dev/mapper/vg_hdd-lv_home
 
 # 6. Volver a Montar
 mount /home/
+```
+
+
+- [ ] **Quitar un disco**
+
+> Como podemos ver en la imagen Tenemos:</br>
+> El pv que utiliza la particion `/dev/sdc6` </br>
+> El VG `vg_oracle`  que esta compuesto por el PV `/dev/sdc6` </br>
+> El LV `lv_oracle`  que pertenece al VG `vg_oracle` </br>
+> Dicho LV esta Montado y siendo utilizado (sin persistencia)</br>
+> Necesitamos Eliminar los pv,vg y lv para tener el sistema limpio..</br>
+<div>
+<table>
+   <tr>
+      <td><img src="../.img/lvm/pvs_vgs_lvs.png" width="99%" align="center"></td>
+   </tr>
+</table>
+</div>
+
+```sh
+# 1. Desmonto el lv (Si estuviera montado de forma persistente eliminar la linea en /etc/fstab)
+umount /dev/mapper/vg_oracle-lv_oracle
+
+# 2. Elimino el lv
+lvremove /dev/mapper/vg_oracle-lv_oracle
+
+# 3. Elimino el vg (No debe tener lv)
+vgremove vg_oracle
+
+# 4. Elimino el pv
+pvremove /dev/sdc6
+
+# En este punto si ejecuto un 
+sudo pvs; sudo vgs; sudo lvs
+# No deberia de ver rastros de ningun pv del disco a quitar..
+
+# Recien aca se puede quitar el disco del host.. o reparticionar para reutilizar en lo que se desee.
 ```
