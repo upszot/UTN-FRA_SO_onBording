@@ -370,3 +370,32 @@ choco install -y git sublimetext4 virtualbox virtualbox-guest-additions-guest.in
 
 - [ ] **Kubernetes (Deseable):**
    > Conceptos básicos de Kubernetes, si el tiempo y el interés lo permiten.
+
+
+- [ ] **Uso de Git para Control de Versiones y Repositorios de código**
+   - Configuración de cuenta:
+     - `git config user.name "<nombre>"`: Configura el nombre de usuario para el sistema Git.
+     - `git config user.email "<email>"`: Configura el email del usuario para el sistema Git.
+   - Iniciar / Asociar repositorio / clonar:
+     - `git init`: Inicializa un nuevo repositorio de Git en el directorio actual.
+     - `git remote add origin <URL>`: Asocia el repositorio local con un repositorio remoto.
+     - `git clone <URL>`: Clona un repositorio remoto en el directorio actual.
+   - Agregar / Remover archivos y subir:
+     - `git add .`: Añade todos los cambios en el directorio actual al área de preparación.
+     - `git rm <archivo>`: Elimina un archivo del repositorio y del sistema de archivos.
+     - `git commit -m "<mensaje>"`: Registra los cambios en el repositorio con un mensaje descriptivo.
+     - `git push`: Envía los commits locales a un repositorio remoto.
+     - `git pull`: Actualiza el repositorio local con los cambios del repositorio remoto.
+   - Manejo de ramas:
+     - `git branch -a`: Muestra todos los branches disponibles, tanto locales como remotos.
+     - `git checkout -b <nuevo-branch>`: Crea un nuevo branch y se cambia automáticamente a él.
+     - `git branch -d <branch>`: Elimina una rama local.
+     - `git push origin --delete <branch>`: Elimina una rama remota.
+   - Historial y estado:
+     - `git status`: Muestra el estado de los archivos en el área de preparación y el repositorio.
+     - `git diff`: Muestra la diferencia entre los archivos en el área de trabajo y el último commit.
+     - `git log`: Muestra el historial de commits.
+   - Etiquetas y estado de commits:
+     - `git tag <nombre-etiqueta>`: Crea una nueva etiqueta (tag) para el commit actual.
+     - `git checkout <commit>`: Cambia el área de trabajo al estado de un commit específico.
+   > Comandos esenciales de Git para gestionar repositorios locales y remotos, configurar cuentas, manejar ramas y realizar operaciones comunes.
