@@ -40,18 +40,19 @@
 - Correr contenedores de docker desde [play-with-docker](https://labs.play-with-docker.com/) sin necesidad de instalarlo.
 - Conocer [kubernetes](https://labs.play-with-k8s.com/) o [Openshift](https://developers.redhat.com/developer-sandbox/activities/learn-kubernetes-using-red-hat-developer-sandbox-openshift) sin necesidad de instalarlo.
 
-### Algunos Temas que aprenderemos durante la cursada.
 
-- [ ] **Preparación del entorno del estudiante: </br>
-    (Es deseable que este todo instalado antes de iniciar la cursada)**
+### Preparación del entorno del estudiante: 
+> El estudiante debera tener instalados en su pc los siguientes programas </br>
+> La misma se podra realizar de forma tradicional o utilizando chocolatey
    - Instalación vía Chocolatey / PowerShell de:
      - [WSL](https://learn.microsoft.com/es-es/windows/wsl/install)
      - [Chocolatey](https://docs.chocolatey.org/en-us/choco/setup#more-install-options)
        - git
-       - sublimetext4
        - VirtualBox
        - virtualbox-guest-additions-guest
        - Vagrant
+       - sublimetext4
+       - docker-desktop
        - MobaXterm
        - PuTTY
        - PuTTYgen
@@ -60,6 +61,8 @@
 choco install -y git sublimetext4 virtualbox virtualbox-guest-additions-guest.install vagrant mobaxterm putty.portable winscp   --log-file=c:\chocolatey_install.log
 ```
    > Configura el entorno del estudiante con las herramientas necesarias para el curso.
+
+### Algunos Temas que aprenderemos durante la cursada.
 
 - [ ] **Verificar si el Host permite y esta Habilitada la Virtualizacion:**
    - Verificacion desde Windows
