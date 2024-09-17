@@ -312,7 +312,7 @@ choco install -y git sublimetext4 virtualbox virtualbox-guest-additions-guest.in
    - Procesos en segundo nivel.
    > Monitorea y gestiona procesos en el sistema.
 
-- [ ] **Bash Scripting:**
+- [ ] **[Bash Scripting:](https://github.com/upszot/UTN-FRA_SO_Bash)**
    - `if`: Utilizado en scripts Bash para realizar una acción si se cumple una condición.
    - `for`: Estructura de bucle utilizada para iterar sobre una lista de elementos en scripts Bash.
    - `while`: Estructura de bucle utilizada para repetir una acción mientras se cumple una condición en scripts Bash.
@@ -335,10 +335,10 @@ choco install -y git sublimetext4 virtualbox virtualbox-guest-additions-guest.in
    - `ssh`: Se utiliza para iniciar una sesión segura en un servidor remoto. 
    - `ssh-keygen`: Permite generar pares de claves pública y privada para autenticación SSH.
    - `ssh-copyid`: Copia la clave pública al servidor remoto, facilitando la autenticación sin contraseña.
-   - [video_Aprendiendo_ssh_Parte1]](https://www.youtube.com/watch?v=RMS5zBYQIqA)
+   - [video_Aprendiendo_ssh_Parte1](https://www.youtube.com/watch?v=RMS5zBYQIqA)
    > Configura y utiliza el protocolo SSH de forma segura.
 
-- [ ] **Aprovisionamiento y Configuración mediante Ansible:**
+- [ ] **[Aprovisionamiento y Configuración mediante Ansible:](https://github.com/upszot/UTN-FRA_SO_Ansible)**
    - Playbooks: Archivos YAML que definen las tareas a realizar en los sistemas remotos.
    - Roles: Conjuntos de tareas y configuraciones agrupadas de manera lógica y reutilizable en Ansible.
    - `ansible-playbook`: Comando para ejecutar playbooks de Ansible.
@@ -348,7 +348,7 @@ choco install -y git sublimetext4 virtualbox virtualbox-guest-additions-guest.in
    > Automatiza la configuración y aprovisionamiento de sistemas mediante Ansible.
 
 
-- [ ] **Docker:**
+- [ ] **[Docker:](https://github.com/upszot/UTN-FRA_SO_Docker)**
    - Contenedor: Una instancia ejecutable de un entorno de software que incluye todo lo necesario para ejecutar una aplicación.
    - Imagen: Un paquete de software ligero y portátil que contiene todo lo necesario para ejecutar una aplicación, incluidas las dependencias, el código, las bibliotecas y las configuraciones.
    - `docker run`: Comando para ejecutar un contenedor a partir de una imagen.
