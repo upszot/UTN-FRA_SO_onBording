@@ -72,6 +72,15 @@ linea2
 linea3
 ```
 
+- Redireccionamiento simple a la Izquierda
+```sh
+wc -l  < /etc/passwd
+```
+> Se Redirigue el archivo  `/etc/passwd` como entrada estándar (stdin) para el comando  `wc -l`   </br>
+> El comando contara la cantidad de lineas del archivo y lo retornara por salida estándar (stdout) 
+
+
+
 
 ### Aplicando lo aprendido
 - Ejemplo  usando redireccionamiento y tuberias

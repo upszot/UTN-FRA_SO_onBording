@@ -189,15 +189,23 @@ choco install -y git sublimetext4 virtualbox virtualbox-guest-additions-guest.in
    - [Seteos vim](vim/.vimrc)
    - [cheat sheet](vim/cheat_sheet_Imprimible.pdf)
    - [cheat sheet Tutorial](vim/vim_cheat_sheet_tutorial.pdf)
-   - [Video 11' Atajos vim del @PeladoNerd](https://www.youtube.com/watch?v=TmNa4y-K5Z8)
+   - [Video 11' Atajos vim del @PeladoNerd](https://www.youtube.com/watch?v=TmNa4y-K5Z8)   
+   Extras:
+      - [Video: Instalando y configurando Nvim bajo windows (WSL)](https://www.youtube.com/watch?v=xBU2nuMCMRQ)
    > Introducción al editor de texto VIM para la edición de archivos en la terminal.
 
 - [ ] **[Redireccionamiento y Tuberías:](comandos_basicos/Redireccionamiento_tuberias.md)**
-   -  `>`, `>>`, `<<<`,`<<`, `<`, `<< DELIMITADOR > archivo`, 
-   - `stdout`, `stdin`, `stderr`.
-   - |
+   - `>`: Redirige la salida estándar (stdout) a un archivo, sobrescribiéndolo.
+   - `>>`: Redirige la salida estándar (stdout) a un archivo, añadiéndola al final.
+   - `<<<`: Redirige una cadena de texto como entrada estándar (stdin).
+   - `<< DELIMITADOR > archivo`: Redirige múltiples líneas de texto como entrada estándar (stdin) hasta encontrar el delimitador.
+   - `<`: Redirige un archivo como entrada estándar (stdin).
+   - `stdout`: Salida estándar, por defecto el terminal.
+   - `stdin`: Entrada estándar, por defecto el teclado.
+   - `stderr`: Salida de error estándar, por defecto el terminal.
    > Comprende y utiliza redireccionamientos y tuberías en la terminal.
 
+   
 - [ ] **Tuneando tu Terminal:**
    - [ ] **Tunenado el History:**
       - `echo "HISTSIZE=-1" >> ~/.bashrc`: Configurar el historial para guardar comandos indefinidamente.
