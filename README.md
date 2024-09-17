@@ -136,6 +136,7 @@ choco install -y git sublimetext4 virtualbox virtualbox-guest-additions-guest.in
    - [Documentación y Ayuda](comandos_basicos/man.md):
      - `man`: Mostrar el manual del comando.
      - `apropos`: Buscar comandos por palabra clave.
+     - `whatis`: Mostrar una breve descripción de un comando.
    - Información del Usuario:
      - `whoami`: Mostrar nombre de usuario.
      - `id`: Mostrar información de usuario y grupo.
@@ -154,6 +155,14 @@ choco install -y git sublimetext4 virtualbox virtualbox-guest-additions-guest.in
      - `w`: Mostrar información sobre los usuarios y sus actividades.
      - `last`: Mostrar historial de inicio de sesión.
    > Desarrolla habilidades fundamentales para la navegación y manipulación de archivos en la terminal, y aprende a acceder a información detallada con `man` y `apropos`.
+
+- [ ] **[Búsqueda de Archivos:](./comandos_basicos/man.md#buscar-informacion-sobre-un-comando-especifico)**
+   - Búsqueda y Localización de Archivos:
+     - `whereis`: Mostrar ubicaciones de archivos binarios, fuentes y páginas de manuales.
+     - `locate`: Buscar archivos o directorios en la base de datos del sistema.
+     - `updatedb`: Actualizar la base de datos de `locate`.
+     - `find`: Buscar archivos y directorios en función de varios criterios.
+   > Aprende a Buscar archivos en sistemas Debian y RedHat.
 
 - [ ] **Atajos para Moverse Dentro de la Terminal:**
    - `Ctrl + E`: Moverse al final de la línea.
@@ -251,15 +260,6 @@ choco install -y git sublimetext4 virtualbox virtualbox-guest-additions-guest.in
    - Conocer en que paquete se encuentra un comando.
    - otros....
    > Aprende a gestionar paquetes, actualizar listas, buscar, instalar y configurar repositorios.
-
-- [ ] **Búsqueda de Archivos:**
-   - Búsqueda y Localización de Archivos:
-     - `locate`: Buscar archivos o directorios en la base de datos del sistema.
-     - `updatedb`: Actualizar la base de datos de `locate`.
-     - `whereis`: Mostrar ubicaciones de archivos binarios, fuentes y páginas de manuales.
-     - `whatis`: Mostrar descripción breve de un comando.
-     - `find`: Buscar archivos y directorios en función de varios criterios.
-   > Aprende a Buscar archivos en sistemas Debian y RedHat.
 
 
 - [ ] **[Creación de Usuarios y Grupos:](./user_group/user_group.md)**

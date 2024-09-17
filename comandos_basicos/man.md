@@ -82,7 +82,7 @@ apropos "network devices" |grep ip
 > Si no trae nada pruebe de actualizar la mandb con el comando "sudo mandb -c" tambien puede ejecutar "updatedb" para actualizar las locate
 
 
-- [ ] **Buscar Informacion sobre un comando especifico**
+## **Buscar Informacion sobre un comando especifico**
 <div>
 <table>
    <tr>
