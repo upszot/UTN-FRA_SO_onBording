@@ -70,5 +70,7 @@ apropos "network devices" |grep ip
       sudo dnf install -y manpages-es
       sudo localectl set-locale LANG=es_AR.UTF-8
     ```
+> Para que tome el cambio, relogearse al equipo
+
 
 
