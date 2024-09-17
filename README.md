@@ -116,21 +116,42 @@ choco install -y git sublimetext4 virtualbox virtualbox-guest-additions-guest.in
    - `hostnamectl set-hostname pc-pepe`: Cambiar el Nombre de la pc.
    - `localectl set-keymap us`: Cambiar configuracion del teclado a Ingles
    - `localectl set-keymap latam`: Cambiar configuracion del teclado a Español latino
-   > Algunos comandos extras para configurar el equipo.
+   > Algunos comandos extras para configurar el equipo. </br>
+   > (Requiere re-logeo para ver los cambios)
 
-- [ ] **Algunos archivos de configuracion que veremos:**
+- [ ] **Atajos para Moverse Dentro de la Terminal:**
+   - `Ctrl + E`: Moverse al final de la línea.
+   - `Ctrl + A`: Moverse al principio de la línea.
+   - `Ctrl + →` y `Ctrl + ←`: Saltar de palabra en palabra hacia adelante y hacia atrás, respectivamente.
+   - `Ctrl + W`: Eliminar la palabra anterior.
+   - `Ctrl + U`: Eliminar desde la posición actual hasta el principio de la línea.
+   - `Ctrl + K`: Eliminar desde la posición actual hasta el final de la línea.
+   - `Ctrl + T`: Intercambiar las dos letras antes del cursor.
+   - `Alt + T`: Intercambiar las dos palabras antes del cursor.
+   - `Ctrl + Y`: Pegar texto previamente eliminado.
+   > Agiliza tus movimientos dentro de la terminal utilizando estos atajos para navegar y editar comandos con eficiencia.
+
+
+- [ ] **Algunos archivos de configuración que veremos:**
    - Configuración del Sistema:
      - `/etc/passwd`: Archivo que almacena información de cuentas de usuario.
      - `/etc/shadow`: Archivo que almacena las contraseñas encriptadas de los usuarios.
      - `/etc/hosts`: Archivo que mapea direcciones IP a nombres de host.
      - `/etc/sudoers`: Archivo que especifica qué usuarios tienen permiso para ejecutar comandos como superusuario.
+     - `/etc/ssh/sshd_config`: Archivo de configuración del servidor SSH.
    - Configuración del Usuario:
      - `$HOME/.ssh/config`: Configuración personalizada para conexiones SSH.
      - `$HOME/.bashrc`: Archivo de configuración de inicio de la shell Bash.
      - `$HOME/.bash_history`: Historial de comandos ejecutados en la shell Bash.
+   - Información del Sistema (archivos virtuales en `/proc`):
+     - `/proc/cpuinfo`: Información detallada sobre el procesador.
+     - `/proc/meminfo`: Información sobre la memoria disponible y usada en el sistema.
+     - `/proc/swaps`: Información sobre las particiones de swap y su uso.
    - Logs del Sistema:
      - `/var/log/messages`: Registro de mensajes del sistema.
-   > Explora archivos de configuracion y archivos de usuario comunes en sistemas Linux.
+     - `/var/log/dmesg`: Registro de mensajes del arranque y mensajes del kernel.
+   > Explora archivos de configuración y archivos de usuario comunes en sistemas Linux.
+
 
 - [ ] **Comandos Básicos - Aprender a moverse por la terminal:**
    - [Documentación y Ayuda](comandos_basicos/man.md):
@@ -164,18 +185,6 @@ choco install -y git sublimetext4 virtualbox virtualbox-guest-additions-guest.in
      - `find`: Buscar archivos y directorios en función de varios criterios.
    > Aprende a Buscar archivos en sistemas Debian y RedHat.
 
-- [ ] **Atajos para Moverse Dentro de la Terminal:**
-   - `Ctrl + E`: Moverse al final de la línea.
-   - `Ctrl + A`: Moverse al principio de la línea.
-   - `Ctrl + →` y `Ctrl + ←`: Saltar de palabra en palabra hacia adelante y hacia atrás, respectivamente.
-   - `Ctrl + W`: Eliminar la palabra anterior.
-   - `Ctrl + U`: Eliminar desde la posición actual hasta el principio de la línea.
-   - `Ctrl + K`: Eliminar desde la posición actual hasta el final de la línea.
-   - `Ctrl + T`: Intercambiar las dos letras antes del cursor.
-   - `Alt + T`: Intercambiar las dos palabras antes del cursor.
-   - `Ctrl + Y`: Pegar texto previamente eliminado.
-   > Agiliza tus movimientos dentro de la terminal utilizando estos atajos para navegar y editar comandos con eficiencia.
-
 - [ ] **Atajos para Búsqueda en el Historial:**
    - `history`: Mostrar el historial completo de comandos.
    - `Ctrl + R`: Realizar una búsqueda inversa en el historial de comandos.
@@ -191,18 +200,8 @@ choco install -y git sublimetext4 virtualbox virtualbox-guest-additions-guest.in
    - `head`: Muestra las primeras líneas de un archivo.
    - `sort`: Ordena líneas de texto.
    - `uniq`: Filtra o elimina líneas duplicadas consecutivas.
+   - `tee`: Lee del `stdin` y escribe en la `stdout` y en archivos simultáneamente.
    > Aprende a manipular y filtrar texto de manera eficiente.
-
-- [ ] **Uso básico de VIM:**
-   - [Que es?, Atajos de vim y Algunas cosas locas que se pueden hacer...](vim/vim.md) 
-   - Archivo de configuracion que puedes usar [$HOME/.vimrc](vim/.vimrc)
-   - [cheat sheet](vim/cheat_sheet_Imprimible.pdf)
-   - [cheat sheet Tutorial](vim/vim_cheat_sheet_tutorial.pdf)
-   - [Video 11' Atajos vim del @PeladoNerd](https://www.youtube.com/watch?v=TmNa4y-K5Z8)   
-   Extras:
-      - [nvim (neoVim - GUI de Desarrollo Moderna y LIVIANA, basada en VIM... competencia de vscode)](https://neovim.io/)
-      - [Video: Instalando y configurando Nvim (WSL)](https://www.youtube.com/watch?v=xBU2nuMCMRQ)
-   > Introducción al editor de texto VIM para la edición de archivos en la terminal.
 
 - [ ] **[Redireccionamiento y Tuberías:](comandos_basicos/Redireccionamiento_tuberias.md)**
    - `>`: Redirige la salida estándar (stdout) a un archivo, sobrescribiéndolo.
@@ -215,6 +214,16 @@ choco install -y git sublimetext4 virtualbox virtualbox-guest-additions-guest.in
    - `stderr`: Salida de error estándar, por defecto el terminal.
    > Comprende y utiliza redireccionamientos y tuberías en la terminal.
 
+- [ ] **Uso básico de VIM:**
+   - [Que es?, Atajos de vim y Algunas cosas locas que se pueden hacer...](vim/vim.md) 
+   - Archivo de configuracion que puedes usar [$HOME/.vimrc](vim/.vimrc)
+   - [cheat sheet](vim/cheat_sheet_Imprimible.pdf)
+   - [cheat sheet Tutorial](vim/vim_cheat_sheet_tutorial.pdf)
+   - [Video 11' Atajos vim del @PeladoNerd](https://www.youtube.com/watch?v=TmNa4y-K5Z8)   
+   Extras:
+      - [nvim (neoVim - GUI de Desarrollo Moderna y LIVIANA, basada en VIM... competencia de vscode)](https://neovim.io/)
+      - [Video: Instalando y configurando Nvim (WSL)](https://www.youtube.com/watch?v=xBU2nuMCMRQ)
+   > Introducción al editor de texto VIM para la edición de archivos en la terminal.
    
 - [ ] **Tuneando tu Terminal:**
    - [ ] **Tunenado el History:**
