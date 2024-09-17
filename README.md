@@ -191,7 +191,8 @@ choco install -y git sublimetext4 virtualbox virtualbox-guest-additions-guest.in
    - [cheat sheet Tutorial](vim/vim_cheat_sheet_tutorial.pdf)
    - [Video 11' Atajos vim del @PeladoNerd](https://www.youtube.com/watch?v=TmNa4y-K5Z8)   
    Extras:
-      - [Video: Instalando y configurando Nvim bajo windows (WSL)](https://www.youtube.com/watch?v=xBU2nuMCMRQ)
+      - [nvim (neoVim - GUI de Desarrollo Moderna y LIVIANA, basada en VIM... competencia de vscode)](https://neovim.io/)
+      - [Video: Instalando y configurando Nvim (WSL)](https://www.youtube.com/watch?v=xBU2nuMCMRQ)
    > Introducción al editor de texto VIM para la edición de archivos en la terminal.
 
 - [ ] **[Redireccionamiento y Tuberías:](comandos_basicos/Redireccionamiento_tuberias.md)**
