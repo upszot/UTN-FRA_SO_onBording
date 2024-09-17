@@ -6,7 +6,7 @@
 <div>
 <table>
    <tr>
-      <td><img src="../.img/man_Secciones.png" width="99%" align="center"></td>
+      <td><img src="../.img/man/man_Secciones.png" width="99%" align="center"></td>
    </tr>
 </table>
 </div>
@@ -45,17 +45,6 @@ man sudo
 man kmalloc
 # https://manpages.debian.org/jessie/linux-manual-3.16/kmalloc.9.en.html
 ```
-- [ ] **Una opcion de buscar un comando sin conocerlo**
-```sh
-# Por ejemplo si queremos buscar todos los comandos relacionados con la red
-man -k network
-apropos network
-
-# Tambien podemos aprovechar las tuberias para ir aplicando filtros a la busqueda.
-apropos "network devices" |grep ip
-```
-> Si no trae nada pruebe de actualizar la mandb con el comando "sudo mandb -c" tambien puede ejecutar "updatedb" para actualizar las locate
-
 
 
 - [ ] **Configurar manpage en español Argentina**
@@ -70,7 +59,52 @@ apropos "network devices" |grep ip
       sudo dnf install -y manpages-es
       sudo localectl set-locale LANG=es_AR.UTF-8
     ```
-> Para que tome el cambio, relogearse al equipo
+> Para que tome el cambio, debe re-logearse al equipo
+
+
+- [ ] **Una forma de buscar un comando, sin conocerlo**
+<div>
+<table>
+   <tr>
+      <td><img src="../.img/man/man_apropos.png" width="90%" align="center"></td>
+   </tr>
+</table>
+</div>
+
+```sh
+# Por ejemplo si queremos buscar todos los comandos relacionados con la red
+man -k network
+apropos network
+
+# Tambien podemos aprovechar las tuberias para ir aplicando filtros a la busqueda.
+apropos "network devices" |grep ip
+```
+> Si no trae nada pruebe de actualizar la mandb con el comando "sudo mandb -c" tambien puede ejecutar "updatedb" para actualizar las locate
+
+
+- [ ] **Buscar Informacion sobre un comando especifico**
+<div>
+<table>
+   <tr>
+      <td><img src="../.img/man/man_extras.png" width="90%" align="center"></td>
+   </tr>
+</table>
+</div>
+
+```sh
+# El comando `whatis` o `man -f ` muestra una breve descripción de un comando.
+whatis ls
+man -f ls
+
+# El comando `whereis` muestra las ubicaciones de los binarios, fuentes y páginas de manual para un comando.
+whereis ls
+
+#  El comando `locate` Busca archivos en el sistema utilizando la base de datos actualizada por updatedb (instalar plocate).
+locate filename
+
+
+```
+> Si no trae nada pruebe de actualizar la mandb con el comando "sudo mandb -c" tambien puede ejecutar "updatedb" para actualizar las locate
 
 
 
