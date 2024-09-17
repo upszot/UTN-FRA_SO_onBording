@@ -407,6 +407,7 @@ choco install -y git sublimetext4 virtualbox virtualbox-guest-additions-guest.in
      - `git commit -m "<mensaje>"`: Registra los cambios en el repositorio con un mensaje descriptivo.
      - `git push`: Envía los commits locales a un repositorio remoto.
      - `git pull`: Actualiza el repositorio local con los cambios del repositorio remoto.
+     - `git fetch`: Obtiene actualizaciones del repositorio remoto sin fusionarlas con tu copia local.
    - Manejo de ramas:
      - `git branch -a`: Muestra todos los branches disponibles, tanto locales como remotos.
      - `git checkout -b <nuevo-branch>`: Crea un nuevo branch y se cambia automáticamente a él.
