@@ -185,8 +185,8 @@ choco install -y git sublimetext4 virtualbox virtualbox-guest-additions-guest.in
    > Aprende a manipular y filtrar texto de manera eficiente.
 
 - [ ] **Uso básico de VIM:**
-   - [Atajos vim](vim/vim.md) 
-   - [Seteos vim](vim/.vimrc)
+   - [Que es?, Atajos de vim y Algunas cosas locas que se pueden hacer...](vim/vim.md) 
+   - Archivo de configuracion que puedes usar [$HOME/.vimrc](vim/.vimrc)
    - [cheat sheet](vim/cheat_sheet_Imprimible.pdf)
    - [cheat sheet Tutorial](vim/vim_cheat_sheet_tutorial.pdf)
    - [Video 11' Atajos vim del @PeladoNerd](https://www.youtube.com/watch?v=TmNa4y-K5Z8)   

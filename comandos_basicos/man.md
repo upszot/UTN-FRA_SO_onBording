@@ -2,6 +2,7 @@
 
 ## man  (interfaz de los manuales de referencia del sistema)
 
+- [ ] **Secciones de las manpages**
 <div>
 <table>
    <tr>
@@ -10,8 +11,7 @@
 </table>
 </div>
 
-
-- Ejemplos de  distintas secciones de man
+- [ ] **Ejemplos de  distintas secciones de man**
 ```sh
 # Seccion 1   Programas ejecutables u órdenes de la shell 
 man man
@@ -45,7 +45,7 @@ man sudo
 man kmalloc
 # https://manpages.debian.org/jessie/linux-manual-3.16/kmalloc.9.en.html
 ```
-- Una opcion de buscar un comando sin conocerlo
+- [ ] **Una opcion de buscar un comando sin conocerlo**
 ```sh
 # Por ejemplo si queremos buscar todos los comandos relacionados con la red
 man -k network
@@ -54,7 +54,21 @@ apropos network
 # Tambien podemos aprovechar las tuberias para ir aplicando filtros a la busqueda.
 apropos "network devices" |grep ip
 ```
-> Si no trae nada pruebe de actualizar la mandb con el comando "mandb" tambien puede ejecutar "updatedb" para actualizar las locate
+> Si no trae nada pruebe de actualizar la mandb con el comando "sudo mandb -c" tambien puede ejecutar "updatedb" para actualizar las locate
 
+
+
+- [ ] **Configurar manpage en español Argentina**
+  - **Debian y Derivados**
+    ```sh
+      sudo apt update
+      sudo apt install -y manpages-es
+      sudo localectl set-locale LANG=es_AR.UTF-8
+    ```
+  - **RedHat y Derivados**
+    ```sh
+      sudo dnf install -y manpages-es
+      sudo localectl set-locale LANG=es_AR.UTF-8
+    ```
 
 
