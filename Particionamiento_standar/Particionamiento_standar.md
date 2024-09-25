@@ -38,13 +38,16 @@ sudo swapon /dev/sdb4
 
 ### Automatizando
 
-- [ ] Ejemplo: Crear las siguientes particiones en el disco `/dev/sde`:
+- [ ] Ejemplo: Generar un Bash Script, `crea_particiones.sh` que realice las siguientes tareas:
+
+    Crear las siguientes particiones en el disco `/dev/sde`:
   - Particion Primaraia de 200M
   - Particion Extendida.
     - Particion Logica (dentro de la extendida)  de 100M
     - Particion Logica (dentro de la extendida)  del resto del Disco Rigido
 
  ```sh
+ #!/bin/bash
 sudo fdisk /dev/sde << EOF
 n
 p
