@@ -1,7 +1,5 @@
 # Particionamiento , Formateo y Montaje
 
-- [ ] 
-
 - Identificamos el disco a particionar mirando los logs del kernel o un simple fdisk -l 
  ```sh
 sudo dmesg
