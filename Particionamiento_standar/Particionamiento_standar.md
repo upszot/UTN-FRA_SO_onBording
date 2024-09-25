@@ -1,5 +1,7 @@
 # Particionamiento , Formateo y Montaje
 
+- [ ] 
+
 - Identificamos el disco a particionar mirando los logs del kernel o un simple fdisk -l 
  ```sh
 sudo dmesg
@@ -35,7 +37,7 @@ sudo mount /dev/sdb3 /mnt/Particion_03
 sudo swapon /dev/sdb4
  ```
 
- 
+
 ### Automatizando
 
 - [ ] Ejemplo: Crear las siguientes particiones en el disco `/dev/sde`:
