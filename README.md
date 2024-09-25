@@ -309,6 +309,7 @@
       > Automatiza tareas mediante scripts Bash.
 
    ### Almacenamiento:
+   - [ ] **[Tipos de Almacenamiento](./Almacenamiento/Tipos_Almacenamiento.md)**
    - [ ] **Tablas de Particiones, [MBR](./.img/Particionamiento/Tabla_Particiones_MBR.png) vs [GPT](./.img/Particionamiento/Tabla_Particiones_GPT.png)**
    - [ ] **[FileSystem](./Teoria/FileSistem.md)**
    - [ ] **[Particionamiento, Formateo y Montado:](Particionamiento_standar/Particionamiento_standar.md)**
@@ -398,19 +399,45 @@
       > Automatiza la configuración y aprovisionamiento de sistemas mediante Ansible.
 
    ### Virtualizacion (Aplicaciones) y Redes
+
    - [ ] **[Docker:](https://github.com/upszot/UTN-FRA_SO_Docker)**
-      - Contenedor: Una instancia ejecutable de un entorno de software que incluye todo lo necesario para ejecutar una aplicación.
-      - Imagen: Un paquete de software ligero y portátil que contiene todo lo necesario para ejecutar una aplicación, incluidas las dependencias, el código, las bibliotecas y las configuraciones.
-      - `docker run`: Comando para ejecutar un contenedor a partir de una imagen.
-      - `docker build`: Comando para construir una nueva imagen a partir de un Dockerfile.
-      - `docker pull`: Comando para descargar una imagen de un registro de Docker.
-      - `docker push`: Comando para subir una imagen a un registro de Docker.
-      - `docker ps`: Muestra los contenedores en ejecución.
-      - `docker images`: Lista las imágenes disponibles en el sistema.
-      - `docker exec`: Ejecuta un comando dentro de un contenedor en ejecución.
-      - `docker rm`: Elimina uno o más contenedores.
-      - `docker rmi`: Elimina una o más imágenes.
-      - `docker-compose`: Herramienta para definir y ejecutar aplicaciones Docker multi-contenedor.
+      - **Conceptos Básicos:**
+        - **Contenedor:** Una instancia ejecutable de un entorno de software que incluye todo lo necesario para ejecutar una aplicación.
+        - **Imagen:** Un paquete de software ligero y portátil que contiene todo lo necesario para ejecutar una aplicación, incluidas las dependencias, el código, las bibliotecas y las configuraciones.
+        - **Dockerfile:** Un archivo de texto que contiene todas las instrucciones para crear una imagen Docker.
+        - **Volumen:** Un mecanismo para persistir datos generados y utilizados por contenedores.
+        - **Redes Docker:** Permite la comunicación entre contenedores, donde puedes definir cómo se conectan y se comunican.
+      - **Comandos Principales:**
+        - `docker run <imagen>`: Comando para ejecutar un contenedor a partir de una imagen.
+        - `docker build -t <nombre-imagen> <ruta>`: Comando para construir una nueva imagen a partir de un Dockerfile.
+        - `docker pull <imagen>`: Comando para descargar una imagen de un registro de Docker.
+        - `docker push <imagen>`: Comando para subir una imagen a un registro de Docker.
+        - `docker ps`: Muestra los contenedores en ejecución.
+        - `docker images`: Lista las imágenes disponibles en el sistema.
+        - `docker exec -it <nombre-contenedor> <comando>`: Ejecuta un comando dentro de un contenedor en ejecución.
+        - `docker rm <nombre-contenedor>`: Elimina uno o más contenedores.
+        - `docker rmi <nombre-imagen>`: Elimina una o más imágenes.
+      - **Comandos Adicionales:**
+        - `docker network ls`: Lista las redes creadas en Docker.
+        - `docker volume ls`: Lista los volúmenes creados en Docker.
+        - `docker run -d <imagen>`: Ejecuta un contenedor en segundo plano (modo "detached").
+        - `docker logs <nombre-contenedor>`: Muestra los logs de un contenedor en ejecución.
+        - `docker inspect <nombre-contenedor>`: Proporciona detalles sobre un contenedor, incluyendo su configuración y estado.
+        - `docker top <nombre-contenedor>`: Muestra los procesos que se están ejecutando dentro de un contenedor.
+      - **Comandos de Limpieza:**
+        - `docker system prune`: Elimina todos los contenedores detenidos, redes no utilizadas, imágenes huérfanas y volúmenes no utilizados para liberar espacio.
+      - **Uso de Docker Compose:**
+        - **Docker Compose:** Herramienta para definir y ejecutar aplicaciones Docker multi-contenedor utilizando un archivo YAML.
+        - **Comandos Comunes:**
+          - `docker compose up`: Inicia todos los contenedores definidos en el archivo `docker-compose.yml`.
+          - `docker compose down`: Detiene y elimina todos los contenedores, redes y volúmenes creados por `up`.
+          - `docker compose logs`: Muestra los logs de todos los contenedores.
+          - `docker compose exec <servicio> <comando>`: Ejecuta un comando en un contenedor de un servicio en ejecución.
+          - `docker compose build`: Construye o reconstruye servicios definidos en el archivo `docker-compose.yml`.
+      - **Prácticas Recomendadas:**
+        - **Mantener imágenes pequeñas:** Utiliza imágenes base ligeras y limpia los archivos temporales durante la construcción.
+        - **Versionar imágenes:** Etiqueta tus imágenes con números de versión para un mejor control.
+
       > Introducción a la virtualización de contenedores con Docker.
 
    - [ ] **Herramienta de Redes:**
@@ -432,16 +459,32 @@
       - `curl -s -o <archivo> <URL>`: Descarga un recurso y guarda la salida en un archivo.
       > Trabaja con el protocolo HTTP para realizar solicitudes y enviar datos.
 
-   - [ ] **Kubernetes (Deseable):**
-      - `kubectl get nodes`: Muestra todos los nodos en el clúster.
-      - `kubectl get services`: Lista todos los servicios en el clúster.
-      - `kubectl create -f <archivo.yaml>`: Crea recursos de Kubernetes definidos en un archivo YAML.
-      - `kubectl apply -f <archivo.yaml>`: Aplica configuraciones de recursos desde un archivo YAML existente.
-      - `kubectl scale deployment <nombre-deployment> --replicas=<n>`: Escala un despliegue a un número específico de réplicas.
-      - `kubectl rollout status deployment/<nombre-deployment>`: Verifica el estado del despliegue.
-      > Conceptos básicos de Kubernetes: administración de pods, servicios, y escalado, si el tiempo y el interés lo permiten.
 
- 
+   - [ ] **Kubernetes (Deseable):**      
+      - **Administración de Recursos:**
+        - `kubectl get nodes`: Muestra todos los nodos en el clúster.
+        - `kubectl get services`: Lista todos los servicios en el clúster.
+        - `kubectl get pods`: Muestra todos los pods en el clúster.
+        - `kubectl get all`: Muestra todos los recursos en el clúster (pods, servicios, despliegues, etc.).      
+      - **Creación y Configuración:**
+        - `kubectl create deployment <nombre-deployment> --image=<nombre-imagen>`: Crea un nuevo despliegue usando la imagen especificada.
+        - `kubectl create service clusterip <nombre-servicio> --tcp=<puerto>:<puerto>`: Crea un servicio de tipo ClusterIP.
+        - `kubectl create configmap <nombre-configmap> --from-literal=<clave>=<valor>`: Crea un ConfigMap para almacenar configuraciones.
+        - `kubectl create secret generic <nombre-secret> --from-literal=<clave>=<valor>`: Crea un secreto para manejar datos sensibles.
+        - `kubectl apply -f <archivo.yaml>`: Aplica configuraciones de recursos desde un archivo YAML existente.
+      - **Manejo de Pods y Despliegues:**
+        - `kubectl describe pod <nombre-pod>`: Muestra detalles sobre un pod específico.
+        - `kubectl logs <nombre-pod>`: Muestra los registros de un pod.
+        - `kubectl exec -it <nombre-pod> -- /bin/sh`: Abre una sesión interactiva en un contenedor.
+        - `kubectl scale deployment <nombre-deployment> --replicas=<n>`: Escala un despliegue a un número específico de réplicas.
+        - `kubectl rollout status deployment/<nombre-deployment>`: Verifica el estado del despliegue.
+        - `kubectl rollout undo deployment/<nombre-deployment>`: Revierte a la versión anterior de un despliegue.
+      - **Manejo de Redes:**
+        - `kubectl port-forward <nombre-pod> <puerto-local>:<puerto-pod>`: Redirige el tráfico de un puerto local a un puerto en un pod.
+        - `kubectl expose deployment <nombre-deployment> --type=LoadBalancer --port=<puerto>`: Expone un despliegue como un servicio accesible externamente.
+   
+      > Conceptos básicos de Kubernetes: administración de pods, despliegues, servicios y escalado, si el tiempo y el interés lo permiten.
+
 
    ### Gestion de Repositorios y Control de Codigo:
    - [ ] **Uso de Git para Control de Versiones y Repositorios de código**
