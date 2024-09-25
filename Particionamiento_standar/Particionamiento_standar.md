@@ -35,6 +35,39 @@ sudo mount /dev/sdb3 /mnt/Particion_03
 sudo swapon /dev/sdb4
  ```
 
+ 
+### Automatizando
+
+- [ ] Ejemplo: Crear las siguientes particiones en el disco `/dev/sde`:
+  - Particion Primaraia de 200M
+  - Particion Extendida.
+    - Particion Logica (dentro de la extendida)  de 100M
+    - Particion Logica (dentro de la extendida)  del resto del Disco Rigido
+
+ ```sh
+sudo fdisk /dev/sde << EOF
+n
+p
+1
+
++200M
+n
+e
+
+
+
+n
+
++100M
+n
+
+
+w
+EOF
+ ```
+> Usando metodologias de redireccionamiento Here-doc: </br>
+> Podemos ver como Automatizar el particionamiento.
+
 
 ## Montaje Persistente.
 
@@ -45,28 +78,28 @@ sudo swapon /dev/sdb4
 
 - Ejemplos de distintos montajes en `/etc/fstab`
  ```sh
-#<dispositivo>                              <punto_de_montaje>        <sistema_de_archivos>    <opciones>                                         <dump>  <pass>
+#<dispositivo>                    <punto_de_montaje>        <FileSystem>    <opciones>                                         <dump>  <pass>
 
 # 1. Montaje de la partición sdb1 en /mnt/Particion_sdb1
-/dev/sdb1                                    /mnt/Particion_sdb1          ext4                  defaults                                             0    2
+/dev/sdb1                             /mnt/Particion_sdb1       ext4          defaults                                             0    2
    
 # 2. Montaje de disco de Windows (NTFS) en /mnt/Disco_windows   
-/dev/sdb1                                    /mnt/Disco_windows           ntfs                  defaults                                             0    0
+/dev/sdb1                             /mnt/Disco_windows        ntfs          defaults                                             0    0
 
 # 3. Montaje de disco en red Samba (Windows) en /mnt/disco_red_windows
-//pc-windows/disco_compartido_1              /mnt/disco_red_windows       cifs                  username=mi_usuario,password=mi_contraseña,nofail    0    0
+//pc-windows/disco_compartido_1       /mnt/disco_red_windows    cifs          username=mi_usuario,password=mi_contraseña,nofail    0    0
 
 # 4. Montaje de disco en red Linux (NFS) en /mnt/disco_red_linux
-pc-linux:/carpeta_compartida_linux           /mnt/disco_red_linux         nfs                   defaults,nofail                                      0    0
+pc-linux:/carpeta_compartida_linux    /mnt/disco_red_linux      nfs           defaults,nofail                                      0    0
      
 # 5. Montaje de archivo ISO en /mnt/imagen_iso     
-/download/iso/fedora.iso                     /mnt/imagen_iso              iso9660               loop                                                 0    0
+/download/iso/fedora.iso              /mnt/imagen_iso           iso9660       loop                                                 0    0
      
 # 6. Montaje de swap en /dev/sdb2     
-/dev/sdb2                                    none                         swap                  defaults                                             0    0
+/dev/sdb2                             none                      swap          defaults                                             0    0
 
 # 7. Montaje con UUID en /mnt/particion_uuid
-UUID=xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx   /mnt/particion_uuid           ext4                  defaults                                             0    0
+UUID=xxxx-xxx-xxx-xxx-xxxxxxxxx       /mnt/particion_uuid       ext4          defaults                                             0    0
  ```
 
 
@@ -77,3 +110,4 @@ UUID=xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx   /mnt/particion_uuid           ext4  
  sudo mount -a
  ```
  > Supongamos que tenemos una particion `/dev/sde1` que quiero que quede montada de forma persistente en `/datos/peliculas`
+
