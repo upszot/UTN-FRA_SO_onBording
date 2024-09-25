@@ -1,14 +1,16 @@
 # Tipos de Almacenamiento
 
-| Tipo de Almacenamiento      | Descripción                                                      |
-|-----------------------------|------------------------------------------------------------------|
-| HDD (Disco Duro Mecánico)   | Almacenamiento magnético, generalmente más lento y con mayor capacidad. |
-| SSD (Unidad de Estado Sólido) | Almacenamiento basado en memoria flash, más rápido y duradero que los HDD. Puede ser SATA 3, M.2 (SATA) o M.2 (NVMe). |
-| SSHD (Unidad de Estado Sólido Híbrida) | Combinación de HDD y SSD, ofrece un equilibrio entre velocidad y capacidad. |
-| Almacenamiento en la Nube    | Datos almacenados en servidores remotos accesibles a través de Internet. |
-| NAS (Almacenamiento Conectado a la Red) | Dispositivo de almacenamiento accesible a través de una red local. |
-| SAN (Red de Área de Almacenamiento) | Red dedicada que proporciona acceso a almacenamiento consolidado. |
-| Almacenamiento Portátil      | Dispositivos externos como HDDs o SSDs que se pueden transportar fácilmente. |
+| Tipo de Almacenamiento      | Forma de Conexión                     | Tasa de Transferencia                  | Descripción                                                      |
+|-----------------------------|---------------------------------------|----------------------------------------|------------------------------------------------------------------|
+| HDD (Disco Duro Mecánico)   | IDE, SATA, USB                        | 80-160 MB/s (SATA)                    | Almacenamiento magnético, lento y con gran capacidad.            |
+| SSD (Unidad de Estado Sólido) | SATA, M.2, USB                        | 200-600 MB/s (SATA), 1-5 GB/s (NVMe) | Almacenamiento rápido basado en memoria flash.                   |
+| SSHD (Unidad de Estado Sólido Híbrida) | SATA, M.2                            | 80-160 MB/s (SATA)                    | Combina HDD y SSD para velocidad y capacidad.                   |
+| Almacenamiento en la Nube    | Internet (protocolo TCP/IP)          | Variable (depende de la conexión)     | Datos en servidores remotos accesibles por Internet.             |
+| NAS (Almacenamiento Conectado a la Red) | Red (protocolo TCP/IP)                | 1 Gbps (Gigabit Ethernet)             | Dispositivo accesible en una red local.                         |
+| SAN (Red de Área de Almacenamiento) | Fiber Channel, iSCSI                 | 2-32 Gbps (Fiber Channel)             | Red dedicada para almacenamiento consolidado.                    |
+| Almacenamiento Portátil      | USB, eSATA                           | 5-40 Gbps (USB 3.0/3.1/3.2, eSATA)    | Dispositivos externos transportables.                            |
+
+
 
 # Tipos de Conectores para Discos Duros en una PC
 
@@ -42,4 +44,15 @@
    </tr>
 </table>
 </div>
+
+## NAS vs SAN
+
+<div>
+<table>
+   <tr>
+      <td><img src="../.img/Almacenamiento/NAS_vs_SAN.jpg" width="99%" align="center"></td>
+   </tr>
+</table>
+</div>
+
 
