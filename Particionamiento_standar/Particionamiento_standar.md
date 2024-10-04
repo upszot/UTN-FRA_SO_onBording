@@ -20,6 +20,11 @@ fdisk /dev/$DISCO
 # Presionamos p para ver la tabla de particiones.
 # Presionamos w para grabar la tabla de particiones.
  ```
+ - Forzar que el kernel lea la tabla de particiones sin necesidad de reiniciar el equipo
+ ```sh
+ sudo partprobe  /dev/sdb
+ ```
+ 
 - Una vez realizadas las particiones Procederemos a formatearlas
  ```sh
 sudo mkfs -t ext4 /dev/sdb1 
