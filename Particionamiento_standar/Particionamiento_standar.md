@@ -115,6 +115,7 @@ UUID=xxxx-xxx-xxx-xxx-xxxxxxxxx       /mnt/particion_uuid       ext4          de
  ```sh
  sudo mkdir -p /datos/peliculas
  echo "/dev/sde1  /datos/peliculas   ext4  defaults  0 0"  | sudo tee -a /etc/fstab
+ sudo systemctl daemon-reload
  sudo mount -a
  ```
  > Supongamos que tenemos una particion `/dev/sde1` que quiero que quede montada de forma persistente en `/datos/peliculas`
