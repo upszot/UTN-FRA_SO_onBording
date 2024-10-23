@@ -10,6 +10,9 @@
 - [pc-workstation](https://github.com/upszot/pc-workstation.git)
 - [Docker](https://github.com/upszot/UTN-FRA_SO_Docker.git)
 - [Examenes](https://github.com/upszot/UTN-FRA_SO_Examenes.git)
+- [Gua de Ejercicios](https://github.com/upszot/UTN-FRA_SO_Guia_Ejercicios.git)
+
+
 
 ## Distribuciones de GNU/Linux utilizadas.
 > En principio el alumno podra utilizar cualquier distribucion de GNU/Linux que desee. </br>
