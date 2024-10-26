@@ -35,7 +35,6 @@ LVM es una tecnología de gestión de almacenamiento para sistemas Linux. Permit
 </table>
 </div>
 
-
 ## Operaciones Básicas (Resumen)
 - [ ] Validar Informacion.
   - sudo pvs
