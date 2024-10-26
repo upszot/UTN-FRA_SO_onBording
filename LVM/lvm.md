@@ -18,9 +18,24 @@ LVM es una tecnología de gestión de almacenamiento para sistemas Linux. Permit
 
 
 ## Ventajas de LVM
-- **Flexibilidad**: Puedes redimensionar volúmenes lógicos sin afectar a otros datos.
-- **Snapshots**: Permite crear "fotos" de volúmenes para fines de respaldo o pruebas.
-- **Migración de Discos**: Puedes mover datos entre discos sin interrumpir el servicio.
+
+<div>
+<table>
+   <tr>
+      <td><img src="../.img/lvm/Ventajas_LVM.jpeg" width="99%" align="center"></td>
+   </tr>
+</table>
+</div>
+
+## Desventajas de LVM
+<div>
+<table>
+   <tr>
+      <td><img src="../.img/lvm/Desventajas_LVM.png" width="99%" align="center"></td>
+   </tr>
+</table>
+</div>
+
 
 ## Operaciones Básicas (Resumen)
 - [ ] Validar Informacion.
