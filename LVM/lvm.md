@@ -16,7 +16,6 @@ LVM es una tecnología de gestión de almacenamiento para sistemas Linux. Permit
 </table>
 </div>
 
-
 ## Ventajas de LVM
 
 <div>
