@@ -13,30 +13,17 @@
 - [Gua de Ejercicios](https://github.com/upszot/UTN-FRA_SO_Guia_Ejercicios.git)
 
 
-
-## Distribuciones de GNU/Linux utilizadas.
-> En principio el alumno podra utilizar cualquier distribucion de GNU/Linux que desee. </br>
-> Nosotros en la cursada vamos a hacer referencia a 2 de las [distros mas usadas](https://distrowatch.com/). </br>
- > Tambien podra elegir el [Entorno de Escritorio](https://es.wikipedia.org/wiki/Entornos_de_Escritorio_en_Linux) que desee ([KDE](https://es.wikipedia.org/wiki/KDE), [GNOME](https://es.wikipedia.org/wiki/GNOME), [Cinnamon](https://es.wikipedia.org/wiki/Cinnamon), [MATE](https://es.wikipedia.org/wiki/MATE) , [Xfce](https://es.wikipedia.org/wiki/Xfce), [Deepin](https://es.wikipedia.org/wiki/Deepin) 
-
-- Nosotros Recomendamos Instalar (Por simplicidad y bajos requerimentos de recursos las siguientes)
-  - [Ubuntu](https://ubuntu.com/download/desktop) Recomendamos instalar ultima version de Larga Duracion de Soporte (LTS)
-  - [Fedora](https://fedoraproject.org/es/spins/) Recomendamos Instalar Fedora Mate-Compiz
-- Levantaremos VM de forma automatizada mediante Vagrant.
-- Utilizaremos discos rigidos virtuales con los SO pre-instalados que los pueden bajar de [OSBoxes.org](https://www.osboxes.org/virtualbox-images/)
-- Probaremos multiples distribuciones sin necesidad de instalacion mediante un browser en [Distrosea](https://distrosea.com/)
-- Correr contenedores de docker desde [play-with-docker](https://labs.play-with-docker.com/) sin necesidad de instalarlo.
-- Conocer [kubernetes](https://labs.play-with-k8s.com/) o [Openshift](https://developers.redhat.com/developer-sandbox/activities/learn-kubernetes-using-red-hat-developer-sandbox-openshift) sin necesidad de instalarlo.
-
-
 ## Preparación del entorno del estudiante: 
 
    ### Programas que se requieren instalar.
+   Indispensables:
+   - [ ] git 
+   - [ ] VirtualBox  
+   - [ ] Vagrant   
+  
+   Opcionales:
    - [ ] Chocolatey
-   - [ ] WSL
-   - [ ] git
-   - [ ] VirtualBox
-   - [ ] Vagrant
+   - [ ] WSL   
    - [ ] MobaXterm
    - [ ] Putty
    - [ ] WinSCP
@@ -61,9 +48,30 @@
    ```sh
    choco install -y git sublimetext4 virtualbox virtualbox-guest-additions-guest.install vagrant mobaxterm putty.portable winscp   --log-file=c:\chocolatey_install.log
    ```
+   ### Tener Descargadas (Para optimizar tiempos)
+   - ISO de instalacion [Descargar_ISO_Fedora-Mate](https://fedoraproject.org/es/spins/mate/download)
+   - Disco Rigido Virtual(VDI) con Ubuntu instalado [Descargar-VDI](https://sourceforge.net/projects/osboxes/files/v/vb/55-U-u/24.04/64bit.7z/download)
    > Configura el entorno del estudiante con las herramientas necesarias para el curso.
 
-## Algunos Temas que aprenderemos durante la cursada.
+
+## Informacion General de la Materia:
+
+### Distribuciones de GNU/Linux utilizadas.
+> En principio el alumno podra utilizar cualquier distribucion de GNU/Linux que desee. </br>
+> Nosotros en la cursada vamos a hacer referencia a 2 de las [distros mas usadas](https://distrowatch.com/). </br>
+ > Tambien podra elegir el [Entorno de Escritorio](https://es.wikipedia.org/wiki/Entornos_de_Escritorio_en_Linux) que desee ([KDE](https://es.wikipedia.org/wiki/KDE), [GNOME](https://es.wikipedia.org/wiki/GNOME), [Cinnamon](https://es.wikipedia.org/wiki/Cinnamon), [MATE](https://es.wikipedia.org/wiki/MATE) , [Xfce](https://es.wikipedia.org/wiki/Xfce), [Deepin](https://es.wikipedia.org/wiki/Deepin) 
+
+- Nosotros Recomendamos Instalar (Por simplicidad y bajos requerimentos de recursos las siguientes)
+  - [Ubuntu](https://ubuntu.com/download/desktop) Recomendamos instalar ultima version de Larga Duracion de Soporte (LTS)
+  - [Fedora](https://fedoraproject.org/es/spins/) Recomendamos Instalar Fedora Mate-Compiz
+- Levantaremos VM de forma automatizada mediante Vagrant.
+- Utilizaremos discos rigidos virtuales con los SO pre-instalados que los pueden bajar de [OSBoxes.org](https://www.osboxes.org/virtualbox-images/)
+- Probaremos multiples distribuciones sin necesidad de instalacion mediante un browser en [Distrosea](https://distrosea.com/)
+- Correr contenedores de docker desde [play-with-docker](https://labs.play-with-docker.com/) sin necesidad de instalarlo.
+- Conocer [kubernetes](https://labs.play-with-k8s.com/) o [Openshift](https://developers.redhat.com/developer-sandbox/activities/learn-kubernetes-using-red-hat-developer-sandbox-openshift) sin necesidad de instalarlo.
+
+
+### Algunos Temas que aprenderemos durante la cursada.
 
    ### Indice de temas:
    - [Virtualizacion - Maquinas Virtuales:](README.md#virtualizacion)
