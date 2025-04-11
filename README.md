@@ -151,6 +151,9 @@
       > Algunos comandos extras para configurar el equipo. </br>
       > (Requiere re-logeo para ver los cambios)
 
+   - [ ] **Me Olvide la clave de mi usuario y la de root**
+      - [Video - Obtener root en cualquier GNU/Linux](https://www.youtube.com/watch?v=CEWeNrnDvBE)
+
    - [ ] **Atajos para Moverse Dentro de la Terminal:**
       - `Ctrl + E`: Moverse al final de la línea.
       - `Ctrl + A`: Moverse al principio de la línea.
