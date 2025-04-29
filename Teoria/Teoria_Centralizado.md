@@ -31,7 +31,7 @@
 
 
 ## SO:
-- [ ] Generales
+- [ ] Un paseo por la Historia de los Sistemas Operativos
     - El nacimiento de [Unix](https://www.youtube.com/watch?v=R4znx49SLxA) 
     - Las [Guerras Unix](https://www.youtube.com/watch?v=OdiKXo7EQ20)
     - Como Nacio GNU/Linux [video](https://www.youtube.com/watch?v=Rch039H0SL4)
