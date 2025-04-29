@@ -43,6 +43,8 @@ scp usuario@direccion_ip_o_nombre_de_servidor:ruta_archivo_local ruta_destino_lo
 ### Documentacion y Extras
   - [ssh mucha informacion -  gentoo handbook](https://wiki.gentoo.org/wiki/SSH)
   - [Video 8' mini Explicacion - @PeladoNerd](https://www.youtube.com/watch?v=RMS5zBYQIqA)
+  - [Video 13' SSH Parte2 - comandos avanzados - @PeladoNerd](https://www.youtube.com/watch?v=IDDmqlN-hF0&t=262s)
+  - [Video 10' SSH Parte 3 - Comandos de Experto - @PeladoNerd](https://www.youtube.com/watch?v=ZHSGGG_WwUs)
 
 ### SSH avanzado
   - [ssh jump](https://wiki.gentoo.org/wiki/SSH_jump_host)

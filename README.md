@@ -74,6 +74,7 @@
 ### Algunos Temas que aprenderemos durante la cursada.
 
    ### Indice de temas:
+   - [Informacion teorica centralizada](./Teoria/Teoria_Centralizado.md)
    - [Virtualizacion - Maquinas Virtuales:](README.md#virtualizacion)
    - [Estructura de un Sistema Operativo:](README.md#estructura-de-un-sistema-operativo)
    - [Configuracion del equipo y Aprendiendo a Moverse sobre la terminal:](README.md#configuracion-del-equipo-y-aprendiendo-a-moverse-sobre-la-terminal)
