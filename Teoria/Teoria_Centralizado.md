@@ -10,7 +10,7 @@
     - Memoria Cache [video](https://www.youtube.com/watch?v=0meqGr8EkvE)
     - [Comparativa MicroProcesadores Intel](../Teoria/Comparativa_Intel.png)
     - [Comparativa MicroProcesadores AMD](../Teoria/Comparativa_AMD.png)
-- [ ] Motherboar
+- [ ] Motherboard
     - Como elegir el Motherboard [video](https://www.youtube.com/watch?v=R-3rf2ay5Vs)
     - [Troubleshooting Motherboard](https://hardzone.es/tutoriales/reparacion/comprobar-placa-base-problemas/)
 - [ ] Memoria
@@ -18,7 +18,7 @@
     - Memoria RAM - Dual Channel [video](https://www.youtube.com/watch?v=DcVDSkf0MsA)
     - Memoria Ram - CL [video](https://www.youtube.com/watch?v=3bAtzt-D33c)
 - [ ] Fuente  de alimentacion
-    - [Como elegit una fuente de alimentacion](https://www.intel.la/content/www/xl/es/gaming/resources/power-supply.html)
+    - [Como elegir una fuente de alimentacion](https://www.intel.la/content/www/xl/es/gaming/resources/power-supply.html)
 - [ ] Almacenamiento
     - [Tipos de Almacenamientos y Tipos de Conectores](../Almacenamiento/Tipos_Almacenamiento.md)
     - [Tabla de particiones](../.img/Particionamiento/Tabla_Particiones_GPT.png)
@@ -34,12 +34,25 @@
 - [ ] Generales
     - Historia de GNU/Linux [video](https://www.youtube.com/watch?v=Rch039H0SL4)
     - Historia terminales tty [video](https://www.youtube.com/watch?v=xD8p3PNhChE) 
+
+- [ ] Boot (Te olvidaste la clave de root, Rompiste algo y no levanta GNU/Linux...)
+   - [Video - Recuperando root en cualquier GNU/Linux](https://www.youtube.com/watch?v=CEWeNrnDvBE)
+   - [Video - Recuperar un GNU/Linux con grub o grub_rescue](https://www.youtube.com/watch?v=kmxzUmkjOlo)
+
+- [ ] Editor VIM y variantes
+    - Atajos vim [Video 11' del @PeladoNerd](https://www.youtube.com/watch?v=TmNa4y-K5Z8)   
+    - Extra (Variantes):
+        - nvim [neoVim - GUI de Desarrollo Moderna y LIVIANA, basada en VIM... (competencia de vscode)](https://neovim.io/)
+        - Instalando y configurando Nvim (WSL)[Video](https://www.youtube.com/watch?v=xBU2nuMCMRQ)
+         
 - [ ] Almacenamiento
     - [Sistemas de Archivos "FileSystem"](../Teoria/FileSistem.md)
 - [ ] Memoria de Intercambio
-- [ ] RamDisk
+- [ ] RamDisk / (ramfs vs tmpfs)
     - Que es un [ramdisk](https://www.kingston.com/latam/blog/pc-performance/what-is-ram-disk)
-    - RamDisk bajo windows?[imdisk](https://www.luisllamas.es/ramdisk-windows-imdisk/)
+    - Ram Disk en GNU/Linux y Windows[Como configurar y usar](https://logico.ar/blog/2023/02/17/configurar-ram-disks-en-linux-y-windows)  
+
+    - [Ramdisk](https://www.linuxadictos.com/crea-un-ramdisk-en-tu-distribucion-linux.html)
 - [ ] Protocolo Comunicacion SSH
     - [Video 8' mini Explicacion - @PeladoNerd](https://www.youtube.com/watch?v=RMS5zBYQIqA)
     - Documentacion y Extras
@@ -50,3 +63,7 @@
         - [ssh jump](https://wiki.gentoo.org/wiki/SSH_jump_host)
         - [ssh tuneles](https://wiki.gentoo.org/wiki/SSH_tunneling)
 
+## Herramientas
+ - [ ] Networking
+    - [CURL](https://www.youtube.com/watch?v=n3NtrQYrjDw)  La navaja suiza que necesitas si eres programador
+    - 
