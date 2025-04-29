@@ -32,6 +32,8 @@
 
 ## SO:
 - [ ] Generales
+    - El nacimiento de [Unix](https://www.youtube.com/watch?v=R4znx49SLxA) 
+    - Las [Guerras Unix](https://www.youtube.com/watch?v=OdiKXo7EQ20)
     - Como Nacio GNU/Linux [video](https://www.youtube.com/watch?v=Rch039H0SL4)
     - Transmutacion de la Terminal - TTY [video](https://www.youtube.com/watch?v=xD8p3PNhChE) 
 
