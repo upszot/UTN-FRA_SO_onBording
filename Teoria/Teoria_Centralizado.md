@@ -32,8 +32,8 @@
 
 ## SO:
 - [ ] Generales
-    - Historia de GNU/Linux [video](https://www.youtube.com/watch?v=Rch039H0SL4)
-    - Historia terminales tty [video](https://www.youtube.com/watch?v=xD8p3PNhChE) 
+    - Como Nacio GNU/Linux [video](https://www.youtube.com/watch?v=Rch039H0SL4)
+    - Transmutacion de la Terminal - TTY [video](https://www.youtube.com/watch?v=xD8p3PNhChE) 
 
 - [ ] Boot (Te olvidaste la clave de root, Rompiste algo y no levanta GNU/Linux...)
    - [Video - Recuperando root en cualquier GNU/Linux](https://www.youtube.com/watch?v=CEWeNrnDvBE)
