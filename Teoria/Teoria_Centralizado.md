@@ -40,13 +40,15 @@
 - [ ] Boot (Te olvidaste la clave de root, Rompiste algo y no levanta GNU/Linux...)
    - [Video - Recuperando root en cualquier GNU/Linux](https://www.youtube.com/watch?v=CEWeNrnDvBE)
    - [Video - Recuperar un GNU/Linux con grub o grub_rescue](https://www.youtube.com/watch?v=kmxzUmkjOlo)
-
+- [ ] Bash
+    - Bash Parte 1 [video @peladonerd](https://www.youtube.com/watch?v=4_ub6614dwY&t=5s)
+    - Bash Parte 2 [video @peladonerd](https://www.youtube.com/watch?v=0D6MOPyPq-c&t=18s)
+    - Bash Parte 3 [video @peladonerd](https://www.youtube.com/watch?v=BTm__-_YrSw&t=2s)
 - [ ] Editor VIM y variantes
     - Atajos vim [Video 11' del @PeladoNerd](https://www.youtube.com/watch?v=TmNa4y-K5Z8)   
     - Extra (Variantes):
         - nvim [neoVim - GUI de Desarrollo Moderna y LIVIANA, basada en VIM... (competencia de vscode)](https://neovim.io/)
         - Instalando y configurando Nvim (WSL)[Video](https://www.youtube.com/watch?v=xBU2nuMCMRQ)
-         
 - [ ] Almacenamiento
     - [Sistemas de Archivos "FileSystem"](../Teoria/FileSistem.md)
 - [ ] Memoria de Intercambio
