@@ -79,7 +79,7 @@
 - [ ] Proyecto Antenas wifi Belgrano [Carpeta_de_Todas_las_Plantillas](../Extras/Fabricacion_Antenas_Wifi/Proyecto_Antenas_Belgrano/)
     - Parabolicas Centrada Optimizada para Nuclos Belgrano [Planos](../Extras/Fabricacion_Antenas_Wifi/Proyecto_Antenas_Belgrano/Parabolica_Centrada_para_Iluminador_Belgrano/)
     - Belgrano Original [Plantillas](../Extras/Fabricacion_Antenas_Wifi/Proyecto_Antenas_Belgrano/Belgrano/05-05-2010-Belgrano%20Mandarache%20x%20chalenger.pdf)
-    - Belgrano 2Ni [Plantillas](../Extras/Fabricacion_Antenas_Wifi/Proyecto_Antenas_Belgrano/Belgrano_2Ni/Belgrano-2ni_20110907.pdf
+    - Belgrano 2Ni [Plantillas](../Extras/Fabricacion_Antenas_Wifi/Proyecto_Antenas_Belgrano/Belgrano_2Ni/Belgrano-2ni_20110907.pdf)
     - Belgrano Caridad [video @mandarache2010](https://www.youtube.com/watch?v=9nzxYgaYgHk) [foro](https://foro.seguridadwireless.net/antenas/belgrano-caridad/) [Plantillas](../Extras/Fabricacion_Antenas_Wifi/Proyecto_Antenas_Belgrano/Belgrano_Caridad/)
     - Belgrano Cataro (Dual band 2.4 y 5Ghz - PCB) [Plantilla](../Extras/Fabricacion_Antenas_Wifi/Proyecto_Antenas_Belgrano/Belgrano_Cataro/)
     - Belgrano Mexico [Foro](https://foro.seguridadwireless.net/antenas/belgrano-mexico-otro-exito-del-proyecto-belgrano/)
