@@ -525,7 +525,7 @@
       - **Sincronización con Remotos:**
         - `git push`: Envía los commits locales a un repositorio remoto.
         - `git fetch`: Obtiene actualizaciones del repositorio remoto sin fusionarlas con tu copia local.
-        - `git pull`: Actualiza el repositorio local con los cambios del repositorio remoto. **Es un atajo para `git fetch` seguido de `git merge`.**
+        - `git pull`: Actualiza el repositorio local con los cambios del repositorio remoto. (**Es un atajo para `git fetch` seguido de `git merge`.**)
       - **Manejo de ramas (Branching):**
         - `git branch`: Muestra las SOLO ramas locales en tu repositorio.
         - `git branch -a`: Muestra TODOS los branches disponibles, tanto locales como remotos.
