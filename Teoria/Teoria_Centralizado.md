@@ -68,8 +68,8 @@
 
 ## Infraestructura como codigo
 - [ ] Ansible
-    - Introduccion Ansible [Video - lachicadesistemas](https://youtu.be/yB7oWJbMd3A?feature=shared)
-    - Manual español Ansible[pdf](https://github.com/upszot/UTN-FRA_SO_Ansible/blob/main/Extras/ansible-es.pdf)
+    - Introduccion Ansible [Video - @lachicadesistemas](https://youtu.be/yB7oWJbMd3A?feature=shared)
+    - Manual español Ansible [pdf](https://github.com/upszot/UTN-FRA_SO_Ansible/blob/main/Extras/ansible-es.pdf)
 - [ ] Docker
     - La historia de los contenedores - Desde 1979 a 2021[video @peladonerd](https://www.youtube.com/watch?v=K0nHZlHNfQ4)
     - Docker de noob-to-pro [video @peladonerd](https://www.youtube.com/watch?v=CV_Uf3Dq-EU&t=2867s)
