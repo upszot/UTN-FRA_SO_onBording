@@ -540,9 +540,7 @@
         - `git log --oneline --graph --decorate`: Muestra un historial de commits compacto y visual.
         - `git show <hash-del-commit>`: Muestra la información y los cambios de un commit específico.
         - `git log HEAD..origin/master`: Muestra los commits que están en `origin/master` pero no en `HEAD`.
-        - `git checkout <Hash-del-commit o tag>`: Cambia el área de trabajo al estado de un commit o etiqueta específica. <details> 
-            <summary>&emsp; <Mostrar/Ocultar> - (**¡Atención! Esto te pondrá en un estado de "HEAD separado".**)</summary>
-            <div>
+        - `git checkout <Hash-del-commit o tag>`: Cambia el área de trabajo al estado de un commit o etiqueta específica. <details><summary>&emsp; <Mostrar/Ocultar> - (<b>¡Atención! Esto te pondrá en un estado de "HEAD separado".</b>)</summary><div>
             <table>
                <tr>
                   <td>
