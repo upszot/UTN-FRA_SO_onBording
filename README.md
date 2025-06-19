@@ -544,9 +544,9 @@
             <table>
                <tr>
                   <td>
-               > **Nota sobre "HEAD Separado":** Cuando tu HEAD no apunta a una rama sino directamente a un commit (como al usar `git checkout` con un hash o un tag), </br>
-               > estás en un estado de "HEAD separado". Si haces commits aquí, no estarán en ninguna rama y pueden ser difíciles de encontrar más tarde. </br>
-               > Para guardar esos cambios, siempre crea una nueva rama (`git branch <nombre-nueva-rama>` o `git checkout -b <nombre-nueva-rama>`) antes de hacer commits.
+               <b>Nota sobre "HEAD Separado":</b> Cuando tu HEAD no apunta a una rama sino directamente a un commit (como al usar `git checkout` con un hash o un tag),  
+               estás en un estado de "HEAD separado". Si haces commits aquí, no estarán en ninguna rama y pueden ser difíciles de encontrar más tarde.  
+               Para guardar esos cambios, siempre crea una nueva rama (`git branch <nombre-nueva-rama>` o `git checkout -b <nombre-nueva-rama>`) antes de hacer commits.
                   </td>
                </tr>
             </table>
