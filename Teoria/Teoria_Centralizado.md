@@ -66,6 +66,19 @@
         - ssh jump [Explicacion - How to do](https://wiki.gentoo.org/wiki/SSH_jump_host)
         - ssh tuneles [Explicacion - How to do](https://wiki.gentoo.org/wiki/SSH_tunneling)
 
+## Infraestructura como codigo
+- [ ] Ansible
+    - Introduccion Ansible [Video - lachicadesistemas](https://youtu.be/yB7oWJbMd3A?feature=shared)
+    - Manual español Ansible[pdf](https://github.com/upszot/UTN-FRA_SO_Ansible/blob/main/Extras/ansible-es.pdf)
+- [ ] Docker
+    - La historia de los contenedores - Desde 1979 a 2021[video @peladonerd](https://www.youtube.com/watch?v=K0nHZlHNfQ4)
+    - Docker de noob-to-pro [video @peladonerd](https://www.youtube.com/watch?v=CV_Uf3Dq-EU&t=2867s)
+    - Manual español Docker [pdf](https://github.com/upszot/UTN-FRA_SO_Docker/blob/master/Extras/docker-es.pdf)
+    - [CheatSheet-Docker](https://dockerlabs.collabnix.com/docker/cheatsheet)
+- [ ] Kubernetes (extras)
+    - Kubernetes de noob-to-pro [video @peladonerd](https://www.youtube.com/watch?v=CV_Uf3Dq-EU&t=2867s)
+    - [CheatSheet-oc-cli](https://cheatography.com/itservicestart-up/cheat-sheets/oc-cli-commands/pdf/?last=1479976646)
+
 ## Herramientas
 - [ ] Editor VIM y variantes
     - Atajos vim [Video 11' del @PeladoNerd](https://www.youtube.com/watch?v=TmNa4y-K5Z8)   
@@ -86,4 +99,5 @@
     - Belgrano Windalo [Plantillas](../Extras/Fabricacion_Antenas_Wifi/Proyecto_Antenas_Belgrano/Belgrano_Windalo/)
 
     > Se encontraran toda la documentacion para crear distintas Antenas e Iluminadores, </br>
-    > Incluso los planos de creaciond e Parabolica centrada optimizada para los Nucleos Belgrano
+    > Incluso los planos de creacion de Parabolica centrada optimizada para los Nucleos Belgrano
+
