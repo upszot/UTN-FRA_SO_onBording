@@ -540,21 +540,20 @@
         - `git log --oneline --graph --decorate`: Muestra un historial de commits compacto y visual.
         - `git show <hash-del-commit>`: Muestra la información y los cambios de un commit específico.
         - `git log HEAD..origin/master`: Muestra los commits que están en `origin/master` pero no en `HEAD`.
-        - `git checkout <Hash-del-commit o tag>`: Cambia el área de trabajo al estado de un commit o etiqueta específica. 
-      <details>
-        <summary>&emsp; <Mostrar/Ocultar> - (**¡Atención! Esto te pondrá en un estado de "HEAD separado".**)</summary>
+        - `git checkout <Hash-del-commit o tag>`: Cambia el área de trabajo al estado de un commit o etiqueta específica. <details> <summary>&emsp; <Mostrar/Ocultar> - (**¡Atención! Esto te pondrá en un estado de "HEAD separado".**)</summary>
       <div>
       <table>
          <tr>
             <td>
-               > **Nota sobre "HEAD Separado":** Cuando tu HEAD no apunta a una rama sino directamente a un commit (como al usar `git checkout` con un hash o un tag), </br>
-               > estás en un estado de "HEAD separado". Si haces commits aquí, no estarán en ninguna rama y pueden ser difíciles de encontrar más tarde. </br>
-               > Para guardar esos cambios, siempre crea una nueva rama (`git branch <nombre-nueva-rama>` o `git checkout -b <nombre-nueva-rama>`) antes de hacer commits.
+         > **Nota sobre "HEAD Separado":** Cuando tu HEAD no apunta a una rama sino directamente a un commit (como al usar `git checkout` con un hash o un tag), </br>
+         > estás en un estado de "HEAD separado". Si haces commits aquí, no estarán en ninguna rama y pueden ser difíciles de encontrar más tarde. </br>
+         > Para guardar esos cambios, siempre crea una nueva rama (`git branch <nombre-nueva-rama>` o `git checkout -b <nombre-nueva-rama>`) antes de hacer commits.
             </td>
          </tr>
       </table>
       </div>
       </details>
+
      -  **Deshacer Cambios (Undo):**
         - `git checkout -- <archivo>`: Descarta los cambios locales en un archivo, devolviéndolo al estado del último commit.
         - `git reset HEAD <archivo>`: Saca un archivo del área de preparación (staging), pero mantiene los cambios.
