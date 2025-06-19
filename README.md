@@ -541,7 +541,7 @@
         - `git show <hash-del-commit>`: Muestra la información y los cambios de un commit específico.
         - `git log HEAD..origin/master`: Muestra los commits que están en `origin/master` pero no en `HEAD`.
         - `git checkout <Hash-del-commit o tag>`: Cambia el área de trabajo al estado de un commit o etiqueta específica. 
-      <details> 
+      <!-- <details>  -->
       <summary>&emsp; <Mostrar/Ocultar> - (**¡Atención! Esto te pondrá en un estado de "HEAD separado".**)</summary>
       <div>
       <table>
@@ -554,7 +554,7 @@
          </tr>
       </table>
       </div>
-      </details>
+      <!-- </details> -->
 
      -  **Deshacer Cambios (Undo):**
         - `git checkout -- <archivo>`: Descarta los cambios locales en un archivo, devolviéndolo al estado del último commit.
