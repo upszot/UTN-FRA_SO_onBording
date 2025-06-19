@@ -166,6 +166,7 @@
       - `Ctrl + T`: Intercambiar las dos letras antes del cursor.
       - `Alt + T`: Intercambiar las dos palabras antes del cursor.
       - `Ctrl + Y`: Pegar texto previamente eliminado.
+      - `[Esc] + .`: Escribe de forma reversiva el ultimo argumento del ultimo comando ejecutado
       > Agiliza tus movimientos dentro de la terminal utilizando estos atajos para navegar y editar comandos con eficiencia.
 
    - [ ] **Tuneando tu Terminal:**
@@ -503,32 +504,66 @@
 
 
    ### Gestion de Repositorios y Control de Codigo:
+   El control de versiones con Git es una herramienta fundamental en el desarrollo de software. 
+   Permite rastrear cambios en el código, colaborar eficientemente en proyectos y revertir a versiones anteriores si es necesario. 
+   Esta guía te ayudará a dominar los comandos esenciales de Git.
    - [ ] **Uso de Git para Control de Versiones y Repositorios de código**
-      - Configuración de cuenta:
+      - **Configuración de cuenta:**
         - `git config user.name "<nombre>"`: Configura el nombre de usuario para el sistema Git.
         - `git config user.email "<email>"`: Configura el email del usuario para el sistema Git.
-      - Iniciar / Asociar repositorio / clonar:
+        - `git config --list`: Muestra la lista de la configuración actual de Git.
+      - **Iniciar / Asociar repositorio / clonar:**
         - `git init`: Inicializa un nuevo repositorio de Git en el directorio actual.
         - `git remote add origin <URL>`: Asocia el repositorio local con un repositorio remoto.
         - `git clone <URL>`: Clona un repositorio remoto en el directorio actual.
-      - Agregar / Remover archivos y subir:
+        - `git remote -v`: Muestra los repositorios remotos configurados.
+      - **Guardar Cambios (Staging & Committing):**
         - `git add .`: Añade todos los cambios en el directorio actual al área de preparación.
         - `git rm <archivo>`: Elimina un archivo del repositorio y del sistema de archivos.
         - `git commit -m "<mensaje>"`: Registra los cambios en el repositorio con un mensaje descriptivo.
+        - `git commit --amend`: Modifica el último commit (cambiando el mensaje o agregando más cambios).
+      - **Sincronización con Remotos:**
         - `git push`: Envía los commits locales a un repositorio remoto.
-        - `git pull`: Actualiza el repositorio local con los cambios del repositorio remoto.
         - `git fetch`: Obtiene actualizaciones del repositorio remoto sin fusionarlas con tu copia local.
-      - Manejo de ramas:
+        - `git pull`: Actualiza el repositorio local con los cambios del repositorio remoto. **Es un atajo para `git fetch` seguido de `git merge`.**
+      - **Manejo de ramas (Branching):**
         - `git branch -a`: Muestra todos los branches disponibles, tanto locales como remotos.
         - `git checkout -b <nuevo-branch>`: Crea un nuevo branch y se cambia automáticamente a él.
+        - `git merge <nombre-rama>`: Fusiona los cambios de la rama especificada en la rama actual.
         - `git branch -d <branch>`: Elimina una rama local.
         - `git push origin --delete <branch>`: Elimina una rama remota.
-      - Historial y estado:
-        - `git status`: Muestra el estado de los archivos en el área de preparación y el repositorio.
+      - **Historial y estado:**
+        - `git status`: Muestra el estado de los archivos en el área de trabajo y el área de preparación.
         - `git diff`: Muestra la diferencia entre los archivos en el área de trabajo y el último commit.
-        - `git log`: Muestra el historial de commits.
+        - `git diff --staged`: Muestra la diferencia entre los archivos en staging y el último commit.
+        - `git log --oneline --graph --decorate`: Muestra un historial de commits compacto y visual.
+        - `git show <hash-del-commit>`: Muestra la información y los cambios de un commit específico.
         - `git log HEAD..origin/master`: Muestra los commits que están en `origin/master` pero no en `HEAD`.
-      - Etiquetas y estado de commits:
+        - `git checkout <nombre-etiqueta>`: Cambia el área de trabajo al estado de una etiqueta específica. **¡Atención! Esto te pondrá en un estado de "HEAD separado".**
+        - `git checkout <Hash-del-commit>`: Cambia el área de trabajo al estado de un commit específico. **Similar al anterior, esto también resulta en un "HEAD separado".**
+        > **Nota sobre "HEAD Separado":** Cuando tu HEAD no apunta a una rama sino directamente a un commit (como al usar `git checkout` con un hash o un tag), </br>
+        > estás en un estado de "HEAD separado". Si haces commits aquí, no estarán en ninguna rama y pueden ser difíciles de encontrar más tarde. </br>
+        > Para guardar esos cambios, siempre crea una nueva rama (`git branch <nombre-nueva-rama>` o `git checkout -b <nombre-nueva-rama>`) antes de hacer commits.
+     -  **Deshacer Cambios (Undo):**
+        - `git checkout -- <archivo>`: Descarta los cambios locales en un archivo, devolviéndolo al estado del último commit.
+        - `git reset HEAD <archivo>`: Saca un archivo del área de preparación (staging), pero mantiene los cambios.
+        - `git revert <hash-del-commit>`: Crea un nuevo commit que deshace los cambios de un commit anterior de forma segura.
+        - `git reset --hard <hash-del-commit>`: (¡Cuidado!) Resetea el repositorio a un commit específico, descartando permanentemente los cambios posteriores.
+     -  **Guardado Temporal (Stash):**
+        - `git stash`: Guarda temporalmente los cambios no confirmados (sin hacer commit) para limpiar el directorio de trabajo.
+        - `git stash list`: Muestra la lista de cambios guardados en el stash.
+        - `git stash pop`: Aplica el último cambio guardado y lo elimina de la lista.
+        - `git stash apply`: Aplica el último cambio guardado pero lo mantiene en la lista.
+     -  **Etiquetas (Tags):**
         - `git tag <nombre-etiqueta>`: Crea una nueva etiqueta (tag) para el commit actual.
-        - `git checkout <commit>`: Cambia el área de trabajo al estado de un commit específico.
-      > Comandos esenciales de Git para gestionar repositorios locales y remotos, configurar cuentas, manejar ramas y realizar operaciones comunes.
+        - `git tag -a <nombre-etiqueta> -m "<mensaje>"`: Crea una etiqueta anotada (annotated tag) para el commit actual con un mensaje.
+        - `git tag -l`: Lista todas las etiquetas en el repositorio.
+        - `git checkout <nombre-etiqueta>`: Cambia el área de trabajo al estado de una etiqueta específica.
+        - `git push origin <nombre-etiqueta>`: Envía una etiqueta específica al repositorio remoto.
+        - `git push origin --tags`: Envía todas las etiquetas locales al repositorio remoto.
+        - `git checkout <Hash-del-commit o tag>`: Cambia el área de trabajo al estado de un commit específico.
+      > Comandos esenciales de Git para gestionar repositorios, configurar cuentas, manejar ramas, sincronizar, inspeccionar el historial y deshacer cambios de forma segura.
+
+
+
+
