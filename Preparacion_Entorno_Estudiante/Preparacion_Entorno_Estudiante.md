@@ -3,7 +3,7 @@
    ### Programas que se requieren instalar.
    Indispensables:
    - [ ] git 
-      > En caso de Realizar una instalacion manual marcar la opcion [Usar External OpenSSH](../.img/Preparacion_Entorno_Estudiante/git-external-openssh.png
+      > En caso de Realizar una instalacion manual marcar la opcion [Usar External OpenSSH](../.img/Preparacion_Entorno_Estudiante/git-external-openssh.png)
    - [ ] VirtualBox  
    - [ ] Vagrant   
   
