@@ -3,7 +3,16 @@
    ### Programas que se requieren instalar.
    Indispensables:
    - [ ] git 
-      > En caso de Realizar una instalacion manual marcar la opcion [Usar External OpenSSH](../.img/Preparacion_Entorno_Estudiante/git-external-openssh.png)
+      <details>
+        <summary>&emsp; <Mostrar/Ocultar> En caso de instalacion Manual, Marcar "Usar External OpenSSH" (Haga Click para ver...) </summary>
+      <div>
+      <table>
+         <tr>
+            <td><img src="../.img/Preparacion_Entorno_Estudiante/git-external-openssh.png" width="90%" align="center"></td>
+         </tr>
+      </table>
+      </div>
+      </details>
    - [ ] VirtualBox  
    - [ ] Vagrant   
   
@@ -40,5 +49,36 @@
    > Configura el entorno del estudiante con las herramientas necesarias para el curso.
 
    ### Habilitar la virtualizacion
-     - [Ver como habilitar la virtualizacion](../README.md#virtualizacion)
   
+   - [ ] **Verificar si tu PC (Host) permite y esta Habilitada la Virtualizacion:**
+      - Verificacion desde Windows
+         - [windows 10](https://learn.microsoft.com/es-es/virtualization/hyper-v-on-windows/reference/hyper-v-requirements) 
+         - [windows 11](https://support.microsoft.com/es-es/windows/habilitar-la-virtualizaci%C3%B3n-en-equipos-windows-11-c5578302-6e43-4b4b-a449-8ced115f58e1)
+      - Verificacion desde Linux o Terminal de Git-Bash en Windows.
+      ```sh
+      grep flags  /proc/cpuinfo  |tail -n1  |grep -iE 'smv|vmx'
+      ```
+      - Verificacion desde la BIOS 
+        - Como activar la Virtualizacion 
+          - [video](https://www.youtube.com/watch?v=PK0WEbQuzxk)
+          - [otro video](https://www.youtube.com/watch?v=zn3ot0MlVhA)
+        - [Intel](https://www.intel.la/content/www/xl/es/support/articles/000005486/processors.html)
+        - [Multiples marcas](https://hardzone.es/2018/12/06/virtualizacion-cpu-como-activarla-ventajas/)
+      > Verificar y Configura la PC para virtualizar equipos.
+
+      - Para los que tienen Mac (M1 o M2)
+        - [Multipass](https://reviblog.net/2021/11/13/como-virtualizar-de-manera-gratuita-ubuntu-linux-en-los-mac-con-chip-m1/)
+
+      > Configura la PC (Mac con Microprocesadores M1 o M2) para virtualizar equipos.
+
+   - [ ] Configuracion de VirtualBox
+      - Cambiar la carpeta predeterminada donde se alojaran los archivos de las Maquinas Virtuales.
+      <div>
+      <table>
+         <tr>
+            <td><img src="../.img/Preparacion_Entorno_Estudiante/VirtualBox_config.png" width="90%" align="center"></td>
+         </tr>
+      </table>
+      </div>
+   > Esto evitara problemas de permisos de windows al usar vagrant para gestionar las VMs.  
+   

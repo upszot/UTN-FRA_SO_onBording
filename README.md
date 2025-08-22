@@ -60,25 +60,7 @@
    ### Virtualizacion:
 
    - [ ] **Verificar si el Host permite y esta Habilitada la Virtualizacion:**
-      - Verificacion desde Windows
-         - [windows 10](https://learn.microsoft.com/es-es/virtualization/hyper-v-on-windows/reference/hyper-v-requirements) 
-         - [windows 11](https://support.microsoft.com/es-es/windows/habilitar-la-virtualizaci%C3%B3n-en-equipos-windows-11-c5578302-6e43-4b4b-a449-8ced115f58e1)
-      - Verificacion desde Linux
-      ```sh
-      grep flags  /proc/cpuinfo  |tail -n1  |grep -iE 'smv|vmx'
-      ```
-      - Verificacion desde la BIOS 
-        - Como activar la Virtualizacion 
-          - [video](https://www.youtube.com/watch?v=PK0WEbQuzxk)
-          - [otro video](https://www.youtube.com/watch?v=zn3ot0MlVhA)
-        - [Intel](https://www.intel.la/content/www/xl/es/support/articles/000005486/processors.html)
-        - [Multiples marcas](https://hardzone.es/2018/12/06/virtualizacion-cpu-como-activarla-ventajas/)
-      > Verificar y Configura la PC para virtualizar equipos.
-
-      - Para los que tienen Mac (M1 o M2)
-        - [Multipass](https://reviblog.net/2021/11/13/como-virtualizar-de-manera-gratuita-ubuntu-linux-en-los-mac-con-chip-m1/)
-
-      > Configura la PC (Mac con Microprocesadores M1 o M2) para virtualizar equipos.
+      - (Habilitar Virtualizacion y Configurar VirtualBox u otro en Windows / Mac)[./Preparacion_Entorno_Estudiante/Preparacion_Entorno_Estudiante.md#Habilitar la virtualizacion]
 
    - [ ] **Generación de VM dentro de VirtualBox:**
       - Creacion VM Manualmente VirtualBox [PDF](vm/Creacion-de-la-maquina-virtual.pdf)
