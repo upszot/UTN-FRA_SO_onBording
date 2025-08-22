@@ -3,6 +3,7 @@
    ### Programas que se requieren instalar.
    Indispensables:
    - [ ] git 
+      > En caso de Realizar una instalacion manual marcar la opcion [Usar External OpenSSH](../.img/Preparacion_Entorno_Estudiante/git-external-openssh.png
    - [ ] VirtualBox  
    - [ ] Vagrant   
   
@@ -37,3 +38,7 @@
    - ISO de instalacion [Descargar_ISO_Fedora-Mate](https://fedoraproject.org/es/spins/mate/download)
    - Disco Rigido Virtual(VDI) con Ubuntu instalado [Descargar-VDI](https://sourceforge.net/projects/osboxes/files/v/vb/55-U-u/24.04/64bit.7z/download)
    > Configura el entorno del estudiante con las herramientas necesarias para el curso.
+
+   ### Habilitar la virtualizacion
+     - [Ver como habilitar la virtualizacion](../README.md#virtualizacion)
+  

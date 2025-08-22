@@ -68,6 +68,9 @@
       grep flags  /proc/cpuinfo  |tail -n1  |grep -iE 'smv|vmx'
       ```
       - Verificacion desde la BIOS 
+        - Como activar la Virtualizacion 
+          - [video](https://www.youtube.com/watch?v=PK0WEbQuzxk)
+          - [otro video](https://www.youtube.com/watch?v=zn3ot0MlVhA)
         - [Intel](https://www.intel.la/content/www/xl/es/support/articles/000005486/processors.html)
         - [Multiples marcas](https://hardzone.es/2018/12/06/virtualizacion-cpu-como-activarla-ventajas/)
       > Verificar y Configura la PC para virtualizar equipos.
