@@ -60,7 +60,7 @@
    ### Virtualizacion:
 
    - [ ] **Verificar si el Host permite y esta Habilitada la Virtualizacion:**
-      - (Habilitar Virtualizacion y Configurar VirtualBox u otro en Windows / Mac)[./Preparacion_Entorno_Estudiante/Preparacion_Entorno_Estudiante.md#Habilitar la virtualizacion]
+      - (Habilitar Virtualizacion y Configurar VirtualBox u otro en Windows / Mac)[./Preparacion_Entorno_Estudiante/Preparacion_Entorno_Estudiante.md#habilitar-la-virtualizacion]
 
    - [ ] **Generación de VM dentro de VirtualBox:**
       - Creacion VM Manualmente VirtualBox [PDF](vm/Creacion-de-la-maquina-virtual.pdf)
