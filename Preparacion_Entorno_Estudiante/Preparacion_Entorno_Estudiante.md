@@ -91,7 +91,9 @@
        - [Rufus](https://rufus.ie/es/)
        - [YUMI](https://pendrivelinux.com/yumi-multiboot-usb-creator/)
      - [ ] Aca dejo un video de como [funciona Ventoy](https://www.youtube.com/watch?v=CrCJbN_hi1g)
-     - [ ] Nota de como hacer un [dual boot](https://www.xataka.com/basics/como-instalar-linux-a-windows-10-ordenadores) con 
+     - [ ] Nota de como hacer un [dual boot](https://www.xataka.com/basics/como-instalar-linux-a-windows-10-ordenadores)  
+     - [ ] Video [Haciendo un dual boot en VirtualBox](https://www.youtube.com/watch?v=Rj9bzqP5egU)
+     - [ ] Video [dual boot](https://www.youtube.com/watch?v=Asyp7UTCtXs)
       
       > Estas Herramientas te crearan un USB booteable desde donde Puedes:  
       > - Instalar cualquier Sistema Operativo 
