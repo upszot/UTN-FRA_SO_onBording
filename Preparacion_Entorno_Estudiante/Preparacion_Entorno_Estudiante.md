@@ -83,9 +83,19 @@
    > Esto evitara problemas de permisos de windows al usar vagrant para gestionar las VMs.  
    
 
-   #### Extras:
+   ### Extras:
 
-   - [ ] Puedes probar cualquier GNU/Linux sin necesidad de instalarlo en tu PC.
-     - Para ello Necesita descargar [Ventoy](https://www.ventoy.net/en/download.html), Tambien hay otras Herramientas como [Rufus](https://rufus.ie/es/), [YUMI](https://pendrivelinux.com/yumi-multiboot-usb-creator/) y otras...
-     - Aca dejo un video de como [funciona Ventoy](https://www.youtube.com/watch?v=CrCJbN_hi1g)
+   - [ ] Crear un USB Booteable 
+     - [ ] Herramientas para crear un USB booteable
+       -  [Ventoy](https://www.ventoy.net/en/download.html) **(Recomendado)**
+       - [Rufus](https://rufus.ie/es/)
+       - [YUMI](https://pendrivelinux.com/yumi-multiboot-usb-creator/)
+     - [ ] Aca dejo un video de como [funciona Ventoy](https://www.youtube.com/watch?v=CrCJbN_hi1g)
+     - [ ] Nota de como hacer un [dual boot](https://www.xataka.com/basics/como-instalar-linux-a-windows-10-ordenadores) con 
+      
+      > Estas Herramientas te crearan un USB booteable desde donde Puedes:  
+      > - Instalar cualquier Sistema Operativo 
+      > - Probar la mayoria de las Distribuciones GNU/Linux. **Sin Necesidad de Instalarlas en tu PC.**
+
+
   
