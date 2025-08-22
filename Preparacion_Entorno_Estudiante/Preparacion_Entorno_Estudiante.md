@@ -82,3 +82,10 @@
       </div>
    > Esto evitara problemas de permisos de windows al usar vagrant para gestionar las VMs.  
    
+
+   #### Extras:
+
+   - [ ] Puedes probar cualquier GNU/Linux sin necesidad de instalarlo en tu PC.
+     - Para ello Necesita descargar [Ventoy](https://www.ventoy.net/en/download.html), Tambien hay otras Herramientas como [Rufus](https://rufus.ie/es/), [YUMI](https://pendrivelinux.com/yumi-multiboot-usb-creator/) y otras...
+     - Aca dejo un video de como [funciona Ventoy](https://www.youtube.com/watch?v=CrCJbN_hi1g)
+  
