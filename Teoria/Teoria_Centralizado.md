@@ -88,6 +88,9 @@
         - Instalando y configurando Nvim (WSL)[Video](https://www.youtube.com/watch?v=xBU2nuMCMRQ)
 - [ ] Networking
     - CURL [video @donwebcloud](https://www.youtube.com/watch?v=n3NtrQYrjDw)  La navaja suiza que necesitas si eres programador
+- [ ] VirtualBox
+     - Instalacion manual de virtualbox en windows [video](https://www.youtube.com/watch?v=uiFZUfmFAus)
+
 
 ## Otros Extras
 - [ ] Fabricacion de Antenas Wireless

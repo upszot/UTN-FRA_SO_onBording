@@ -98,6 +98,7 @@
       > Estas Herramientas te crearan un USB booteable desde donde Puedes:  
       > - Instalar cualquier Sistema Operativo 
       > - Probar la mayoria de las Distribuciones GNU/Linux. **Sin Necesidad de Instalarlas en tu PC.**
-
+   - [ ] Virtualizacion
+     - Instalacion manual de virtualbox en windows [video](https://www.youtube.com/watch?v=uiFZUfmFAus)
 
   
