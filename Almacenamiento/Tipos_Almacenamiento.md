@@ -19,7 +19,7 @@
 | eSATA              | 2004        | 6 Gbps / 0.75 GB/s             | Versión externa de SATA, permite la conexión de discos duros externos. |
 | SATA III           | 2009        | 6 Gbps / 0.75 GB/s             | La versión más común en uso, adecuada para la mayoría de SSDs.  |
 | M.2 SATA           | 2009        | 6 Gbps / 0.75 GB/s             | Utiliza el protocolo SATA en un formato compacto.               |
-| M.2 NVMe           | 2013        | 32 Gbps / 4 GB/s               | Alta velocidad usando la interfaz NVMe sobre PCIe.              |
+| M.2 NVMe           | 2013        | Depende de PCIe (Ini=PCIe 3)   | Alta velocidad usando la interfaz NVMe sobre PCIe.              |
 | PCIe 3.0           | 2010        | 32 Gbps / 4 GB/s               | Conexión rápida para dispositivos como SSDs; hasta 32 Gbps en 4 carriles. |
 | PCIe 4.0           | 2017        | 64 Gbps / 8 GB/s               | Mejora en velocidad de transferencia en comparación con PCIe 3.0. |
 | PCIe 5.0           | 2019        | 128 Gbps / 16 GB/s             | Velocidades aún más rápidas, usado en dispositivos de última generación. |
