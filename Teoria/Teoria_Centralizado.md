@@ -40,6 +40,9 @@
 - [ ] Boot (Te olvidaste la clave de root, Rompiste algo y no levanta GNU/Linux...)
    - Recuperando root en cualquier GNU/Linux [Video @lachicadesistemas](https://www.youtube.com/watch?v=CEWeNrnDvBE)
    - Recuperar un GNU/Linux con grub o grub_rescue[Video @lachicadesistemas](https://www.youtube.com/watch?v=kmxzUmkjOlo)
+
+- [ ] Kernel
+   - Analisis Discusion Tanenbaum vs Torvals [video @eminwux](https://www.youtube.com/watch?v=Kqbg1xHZbuw)
    
 - [ ] Bash
     - Bash Parte 1 [video @peladonerd](https://www.youtube.com/watch?v=4_ub6614dwY&t=5s)
