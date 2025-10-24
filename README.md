@@ -276,7 +276,7 @@
    ### Almacenamiento:
    - [ ] **[Tipos de Almacenamiento](./Almacenamiento/Tipos_Almacenamiento.md)**
    - [ ] **Tablas de Particiones, [MBR](./.img/Particionamiento/Tabla_Particiones_MBR.png) vs [GPT](./.img/Particionamiento/Tabla_Particiones_GPT.png)**
-   - [ ] **[FileSystem](./Teoria/FileSistem.md)**
+   - [ ] **[FileSystem](./Teoria/FileSystem.md)**
    - [ ] **[Particionamiento, Formateo y Montado:](Particionamiento_standar/Particionamiento_standar.md)**
       - `dmesg`: Muestra el buffer de mensajes del kernel, útil para diagnosticar problemas durante el arranque del sistema.
       - `fdisk`: Una herramienta para manipular la tabla de particiones en sistemas Unix y Linux.
