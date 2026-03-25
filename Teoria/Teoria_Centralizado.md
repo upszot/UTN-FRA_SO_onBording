@@ -52,7 +52,6 @@
 - [ ] Almacenamiento
     - Sistemas de Archivos ["FileSystem"](../Teoria/FileSistem.md)
     - LVM [video @upszot](https://youtu.be/caUXbuu_O0k)
-    <https://youtu.be/caUXbuu_O0k>
 
 - [ ] Memoria 
     - [ ] Memoria de Intercambio
