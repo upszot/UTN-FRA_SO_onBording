@@ -1,4 +1,4 @@
-# UTN-FRA_SO_onBording
+# UTN-FRA_SO_onBoarding
 ## Catedra de Arquitectura de Sistemas Operativos - UTN
 
 
