@@ -1,6 +1,4 @@
 # Informacion Teorica Centralizada 
-> NOTA: Esta seccion se encuentra en desarrollo..
-
 
 ## Arquitectura  - Componentes de una PC.:
 - [ ] MicroProcesador
