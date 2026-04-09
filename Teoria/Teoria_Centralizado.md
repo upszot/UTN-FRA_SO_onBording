@@ -42,7 +42,7 @@
    - Recuperar un GNU/Linux con grub o grub_rescue[Video @lachicadesistemas](https://www.youtube.com/watch?v=kmxzUmkjOlo)
 
 - [ ] Kernel
-   - Analisis Discusion Tanenbaum vs Torvals [video @eminwux](https://www.youtube.com/watch?v=Kqbg1xHZbuw)
+   - Analisis Discusion Tanenbaum vs Torvals (Micro-kernel vs Kernel-Monolitico) [video @eminwux](https://www.youtube.com/watch?v=Kqbg1xHZbuw)
    
 - [ ] Bash
     - Bash Parte 1 [video @peladonerd](https://www.youtube.com/watch?v=4_ub6614dwY&t=5s)
@@ -50,7 +50,7 @@
     - Bash Parte 3 [video @peladonerd](https://www.youtube.com/watch?v=BTm__-_YrSw&t=2s)
     
 - [ ] Almacenamiento
-    - Sistemas de Archivos ["FileSystem"](../Teoria/FileSistem.md)
+    - Sistemas de Archivos ["FileSystem"](../Teoria/FileSystem.md)
     - LVM [video @upszot](https://youtu.be/caUXbuu_O0k)
 
 - [ ] Memoria 
@@ -96,6 +96,33 @@
 
 
 ## Otros Extras
+
+- [ ] Películas relacionadas
+
+  - [ ] **La Era de los Pioneros (Segunda Guerra Mundial y Posguerra)**
+    *El nacimiento de la computación moderna para descifrar códigos y realizar cálculos complejos.*
+    - **Código Enigma (The Imitation Game, 2014):** Alan Turing y la máquina "Christopher" (electromecánica). Ideal para hablar de la Máquina de Turing y lógica computacional.
+    - **Oppenheimer (2023):** Muestra la urgencia de los cálculos numéricos masivos. Aparece John von Neumann, Padre de la arquitectura de computadoras modernas (CPU, Memoria, E/S), Se gesto la necesidad de la "Computación de Alto Rendimiento" (HPC).
+    - **Talentos Ocultos (Hidden Figures, 2016):** Excelente para mostrar la **Primera Generación (tubos al vacío)** y la **Segunda (transistores)** con el paso de los "procedimientos manuales" a la programación en FORTRAN para el IBM 7094.
+
+  - [ ] **El nacimiento de las PC y la guerra de Arquitecturas (Años 70 - 90)**
+    *Sobre la interfaz gráfica, sistemas operativos y estandarización.*
+    - **Piratas de Silicon Valley (1999):** La rivalidad Gates vs. Jobs. Fundamental para entender el concepto de GUI (Interfaz Gráfica) y cómo Microsoft licenció un SO (DOS) sin tenerlo terminado.
+    - **Steve Jobs (2015):** Útil para ver la evolución del hardware (Macintosh vs. NeXT).
+    - **Micro Men (2009):** Joya de la BBC sobre la computación británica. Muestra la arquitectura del BBC Micro y los procesadores **ARM** (que hoy usan todos los celulares y las Mac nuevas).
+    - **Silicon Cowboys (2016):** La historia de Compaq y la ingeniería inversa al BIOS de IBM para crear el mercado de las "PC Compatibles".
+
+  - [ ] **El auge del Internet y la cultura Hacker (Años 80 - 2000)**
+    *Ética, seguridad, redes y software libre.*
+    - **WarGames (Juegos de Guerra, 1983):** Conceptos tempranos de IA, módems telefónicos (Wardialing) y seguridad en sistemas críticos.
+    - **Revolution OS (2001 - Documental):** La biblia para entender por qué usamos Linux en los servidores. Explica el kernel, el código abierto y la arquitectura de software libre.
+    - **The Net (La Red, 1995):** Ficción sobre el poder de las bases de datos distribuidas y el robo de identidad.
+    - **Takedown (Operación Takedown, 2000):** La captura de Kevin Mitnick. Muy buena para hablar de ingeniería social y vulnerabilidades de protocolos.
+
+  - [ ] **Redes y Era Moderna:**
+    - **La red social (The Social Network, 2010):** Más allá del drama, sirve para hablar de **escalabilidad de servidores**, algoritmos y la arquitectura detrás de una plataforma masiva.
+
+
 - [ ] Fabricacion de Antenas Wireless
     - [ ] Proyecto Antenas wifi Belgrano [Carpeta_de_Todas_las_Plantillas](../Extras/Fabricacion_Antenas_Wifi/Proyecto_Antenas_Belgrano/)
         - Parabolicas Centrada Optimizada para Nuclos Belgrano [Planos](../Extras/Fabricacion_Antenas_Wifi/Proyecto_Antenas_Belgrano/Parabolica_Centrada_para_Iluminador_Belgrano/)
